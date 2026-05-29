@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Associates — Construction & Execution | VARAM</title>
+  <meta name="description"
+    content="Shri Associates — the construction and execution arm of VARAM. Building construction, interior execution, renovation, and project management delivered with precision.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://varam.co/shri-associates.html">
+  <meta property="og:title" content="Shri Associates — Precision Construction & Execution">
+  <meta property="og:description"
+    content="Building construction, interior execution, renovation, and project management — delivered on specification and on time.">
+  <meta property="og:image" content="https://varam.co/assets/images/og-construction.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shri Associates — Construction & Execution">
+  <meta name="twitter:image" content="https://varam.co/assets/images/og-construction.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#EBBE41', 'yellow-hover': '#D4A82E',
+              'yellow-tint': '#FBF1D4', charcoal: '#3C3B39',
+              text: '#2A2A28', muted: '#6B6A67',
+              border: '#E5E2DC', tint: '#FAF8F3',
+            },
+          },
+          fontFamily: { sans: ['Jost', 'system-ui', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/shri-associates.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav id="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About VARAM</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Services <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="varam-architects.html" class="nav-dropdown-item">Varam Architects</a>
+              <a href="shri-associates.html" class="nav-dropdown-item">Shri Associates</a>
+              <a href="mpms.html" class="nav-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="portfolio.html#architecture" class="nav-dropdown-item">Architecture Projects</a>
+              <a href="portfolio.html#construction" class="nav-dropdown-item">Construction Projects</a>
+              <a href="portfolio.html#renovation" class="nav-dropdown-item">Renovation Projects</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-link">Contact / Enquiry</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+    <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" style="height:2.75rem; width:auto; object-fit:contain;">
+        <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
+          <i data-lucide="x" style="width:20px;height:20px;"></i>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About VARAM</a>
+        <div class="drawer-item">
+          <button class="drawer-link">Services <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="varam-architects.html" class="drawer-dropdown-item">Varam Architects</a>
+            <a href="shri-associates.html" class="drawer-dropdown-item">Shri Associates</a>
+            <a href="mpms.html" class="drawer-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+          </div>
+        </div>
+        <div class="drawer-item">
+          <button class="drawer-link">Portfolio <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="portfolio.html#architecture" class="drawer-dropdown-item">Architecture Projects</a>
+            <a href="portfolio.html#construction" class="drawer-dropdown-item">Construction Projects</a>
+            <a href="portfolio.html#renovation" class="drawer-dropdown-item">Renovation Projects</a>
+          </div>
+        </div>
+        <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
+      </nav>
+      <div class="drawer-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start Your Project</a>
+      </div>
+      <div class="drawer-social">
+        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Instagram"><i
+            data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Facebook"><i
+            data-lucide="facebook" style="width:18px;height:18px;"></i></a>
+        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on LinkedIn"><i
+            data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <header class="hero-full hero-shri" aria-label="Shri Associates">
+      <div class="hero-full-bg" aria-hidden="true"></div>
+      <div class="hero-full-overlay" aria-hidden="true"></div>
+      <div class="hero-full-content container">
+        <p class="eyebrow-yellow">Shri Associates</p>
+        <h1>Precision construction.<br>Delivered on time.</h1>
+        <p>From structural concrete to precision joinery — Shri Associates executes every scope with the discipline of a
+          specialist and the understanding of an integrated partner who reads the drawings the way they were drawn.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          <a href="portfolio.html" class="btn btn-outline-white">Construction Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- EXECUTION PHILOSOPHY -->
+    <section class="exec-section">
+      <div class="container">
+        <div class="exec-inner">
+          <div class="exec-text">
+            <p class="eyebrow">Execution Philosophy</p>
+            <h2>We build the way the drawings intend — not the way that is convenient.</h2>
+            <div class="divider"></div>
+            <p>Shri Associates was built on a frustration that most owners share: contractors who submit impressive
+              bids, then cut corners when no one is watching. We run our sites differently. Every foreman on a Shri
+              Associates project knows that the architect's intent is non-negotiable — because we are part of the same
+              family.</p>
+            <p>When Varam Architects designs a building, Shri Associates builds it. That means the person holding the
+              trowel has spoken with the person who drew the line. Problems that would take weeks to resolve in a
+              typical contractual chain are solved in hours.</p>
+            <p>For projects designed by external architects, we bring the same discipline: precision to specification,
+              active communication with the design team, and zero tolerance for unexplained deviations.</p>
+            <div class="quality-pillars">
+              <div class="pillar">
+                <p class="pillar-num">01</p>
+                <p>No surprises on costs</p>
+              </div>
+              <div class="pillar">
+                <p class="pillar-num">02</p>
+                <p>Weekly progress reports</p>
+              </div>
+              <div class="pillar">
+                <p class="pillar-num">03</p>
+                <p>Documented quality checks</p>
+              </div>
+              <div class="pillar">
+                <p class="pillar-num">04</p>
+                <p>Single point of contact</p>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/construction/site-work.jpg" alt="Shri Associates site team reviewing structural work"
+            class="exec-img" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="shri-services section" id="services">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="eyebrow">What We Build</p>
+          <h2>Construction services.</h2>
+          <p>From ground-breaking to final coat — across new builds, interiors, and renovation.</p>
+        </div>
+        <div class="grid-2" style="gap:1.5px;">
+
+          <article class="shri-service-item">
+            <div class="shri-service-icon">
+              <i data-lucide="building" style="width:26px;height:26px;stroke-width:1;"></i>
+            </div>
+            <div class="shri-service-body">
+              <h3>Building Construction</h3>
+              <p>New residential, commercial, and institutional construction — from foundation to structural completion.
+                We handle civil, masonry, RCC, and finishing works as a single integrated scope.</p>
+            </div>
+          </article>
+
+          <article class="shri-service-item">
+            <div class="shri-service-icon">
+              <i data-lucide="layout" style="width:26px;height:26px;stroke-width:1;"></i>
+            </div>
+            <div class="shri-service-body">
+              <h3>Interior Execution</h3>
+              <p>Precision interior works including false ceilings, flooring, wall finishes, modular joinery, and custom
+                millwork — executed to the design drawings with attention to joint, tolerance, and finish.</p>
+            </div>
+          </article>
+
+          <article class="shri-service-item">
+            <div class="shri-service-icon">
+              <i data-lucide="tool" style="width:26px;height:26px;stroke-width:1;"></i>
+            </div>
+            <div class="shri-service-body">
+              <h3>Renovation & Repair Works</h3>
+              <p>Structural repair, waterproofing, partial demolition and rebuild, and selective renovation of existing
+                buildings — including heritage structures requiring careful intervention.</p>
+            </div>
+          </article>
+
+          <article class="shri-service-item">
+            <div class="shri-service-icon">
+              <i data-lucide="file-spreadsheet" style="width:26px;height:26px;stroke-width:1;"></i>
+            </div>
+            <div class="shri-service-body">
+              <h3>Quantity Surveying & BOQ Preparation</h3>
+              <p>Detailed bill of quantities, cost estimation, and tender documentation — providing clients with
+                transparent, itemised cost visibility before a single brick is laid.</p>
+            </div>
+          </article>
+
+          <article class="shri-service-item">
+            <div class="shri-service-icon">
+              <i data-lucide="clipboard-list" style="width:26px;height:26px;stroke-width:1;"></i>
+            </div>
+            <div class="shri-service-body">
+              <h3>Project Management</h3>
+              <p>For clients who have engaged their own contractors — Shri Associates can act as a construction manager:
+                coordinating schedules, supervising quality, and protecting the client's interests on site.</p>
+            </div>
+          </article>
+
+          <article class="shri-service-item">
+            <div class="shri-service-icon">
+              <i data-lucide="zap" style="width:26px;height:26px;stroke-width:1;"></i>
+            </div>
+            <div class="shri-service-body">
+              <h3>MEP Works Coordination</h3>
+              <p>Electrical, plumbing, and HVAC coordination — working alongside specialist sub-contractors to ensure
+                services are integrated cleanly with the architectural and structural design.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="shri-projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Construction projects.</h2>
+          <p style="color:var(--text-muted);">A selection of residential, commercial, and renovation projects delivered
+            by Shri Associates.</p>
+        </div>
+        <div class="grid-2">
+
+          <article class="shri-project-card">
+            <img src="assets/images/portfolio/project-03.jpg"
+              alt="Greenfield Villas, East Coast Road — six luxury villas turnkey construction" class="shri-project-img"
+              loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+            <div class="shri-project-body">
+              <span class="tag">Residential Construction</span>
+              <h3>Greenfield Villas, East Coast Road</h3>
+              <p>Turnkey construction of six luxury villas — structural works, all finishes, landscaping, and MEP.
+                Completed and handed over to owners in 18 months.</p>
+              <div class="shri-project-meta">
+                <span><i data-lucide="square" style="width:12px;height:12px;"></i> 6 units, approx. 3,200 sq ft
+                  each</span>
+                <span><i data-lucide="calendar" style="width:12px;height:12px;"></i> 18-month build</span>
+              </div>
+              <a href="portfolio.html" class="arrow-link" style="margin-top:1rem;display:inline-flex;">View in portfolio
+                <i data-lucide="arrow-right" style="width:13px;height:13px;"></i></a>
+            </div>
+          </article>
+
+          <article class="shri-project-card">
+            <img src="assets/images/portfolio/project-04.jpg" alt="Heritage Townhouse Restoration, Mylapore"
+              class="shri-project-img" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+            <div class="shri-project-body">
+              <span class="tag">Heritage Renovation</span>
+              <h3>Heritage Townhouse Restoration, Mylapore</h3>
+              <p>Structural repair and careful restoration of an 80-year-old Chettinad townhouse — preserving original
+                terrazzo floors, carved teak screens, and the traditional courtyard configuration.</p>
+              <div class="shri-project-meta">
+                <span><i data-lucide="square" style="width:12px;height:12px;"></i> 4,100 sq ft renovation</span>
+                <span><i data-lucide="calendar" style="width:12px;height:12px;"></i> Heritage restoration</span>
+              </div>
+              <a href="portfolio.html" class="arrow-link" style="margin-top:1rem;display:inline-flex;">View in portfolio
+                <i data-lucide="arrow-right" style="width:13px;height:13px;"></i></a>
+            </div>
+          </article>
+
+        </div>
+        <div style="margin-top:3rem;">
+          <a href="portfolio.html" class="btn btn-secondary">Full Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band section" aria-labelledby="shri-cta">
+      <div class="container">
+        <div class="cta-band-inner">
+          <div>
+            <h2 id="shri-cta">Ready to build?</h2>
+            <p>Share your drawings and scope — we will provide a detailed, itemised estimate.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer-v2">
+
+    <!-- CTA BAND -->
+    <div class="footer-cta-band">
+      <div class="container">
+        <div class="footer-cta-inner">
+          <div class="footer-cta-text">
+            <p class="footer-cta-eyebrow">Ready to begin?</p>
+            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+          </div>
+          <div class="footer-cta-actions">
+            <a href="contact.html" class="btn-footer-primary">Start Your Project <i data-lucide="arrow-right" class="icon-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-main-row">
+
+          <div class="footer-brand-col">
+            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
+            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated lifecycle.</p>
+          </div>
+
+          <div class="footer-links-wrap">
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Services</p>
+              <a href="varam-architects.html" class="footer-link">Varam Architects</a>
+              <a href="shri-associates.html" class="footer-link">Shri Associates</a>
+              <a href="mpms.html" class="footer-link">MPMS</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Company</p>
+              <a href="about.html" class="footer-link">About VARAM</a>
+              <a href="portfolio.html" class="footer-link">Portfolio</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Reach Us</p>
+              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
+              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
+              <span class="footer-link">Chennai, Tamil Nadu</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bar">
+      <div class="container">
+        <div class="footer-bar-inner">
+          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
+          <div class="footer-socials-bar">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up" class="icon-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with VARAM on WhatsApp">
+    <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varam Architects — Architecture & Interior Design | VARAM</title>
+  <meta name="description"
+    content="Varam Architects (Vaidyanathan and Ramya Architects) — residential, commercial, and institutional architecture rooted in place and shaped by purpose.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://varam.co/varam-architects.html">
+  <meta property="og:title" content="Varam Architects — Architecture & Interior Design">
+  <meta property="og:description"
+    content="Residential, commercial, and institutional architecture rooted in place and shaped by purpose.">
+  <meta property="og:image" content="https://varam.co/assets/images/og-architects.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Varam Architects">
+  <meta name="twitter:image" content="https://varam.co/assets/images/og-architects.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#EBBE41', 'yellow-hover': '#D4A82E',
+              'yellow-tint': '#FBF1D4', charcoal: '#3C3B39',
+              text: '#2A2A28', muted: '#6B6A67',
+              border: '#E5E2DC', tint: '#FAF8F3',
+            },
+          },
+          fontFamily: { sans: ['Jost', 'system-ui', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/varam-architects.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav id="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About VARAM</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Services <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="varam-architects.html" class="nav-dropdown-item">Varam Architects</a>
+              <a href="shri-associates.html" class="nav-dropdown-item">Shri Associates</a>
+              <a href="mpms.html" class="nav-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="portfolio.html#architecture" class="nav-dropdown-item">Architecture Projects</a>
+              <a href="portfolio.html#construction" class="nav-dropdown-item">Construction Projects</a>
+              <a href="portfolio.html#renovation" class="nav-dropdown-item">Renovation Projects</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-link">Contact / Enquiry</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+    <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" style="height:2.75rem; width:auto; object-fit:contain;">
+        <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
+          <i data-lucide="x" style="width:20px;height:20px;"></i>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About VARAM</a>
+        <div class="drawer-item">
+          <button class="drawer-link">Services <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="varam-architects.html" class="drawer-dropdown-item">Varam Architects</a>
+            <a href="shri-associates.html" class="drawer-dropdown-item">Shri Associates</a>
+            <a href="mpms.html" class="drawer-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+          </div>
+        </div>
+        <div class="drawer-item">
+          <button class="drawer-link">Portfolio <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="portfolio.html#architecture" class="drawer-dropdown-item">Architecture Projects</a>
+            <a href="portfolio.html#construction" class="drawer-dropdown-item">Construction Projects</a>
+            <a href="portfolio.html#renovation" class="drawer-dropdown-item">Renovation Projects</a>
+          </div>
+        </div>
+        <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
+      </nav>
+      <div class="drawer-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start Your Project</a>
+      </div>
+      <div class="drawer-social">
+        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Instagram"><i
+            data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Facebook"><i
+            data-lucide="facebook" style="width:18px;height:18px;"></i></a>
+        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on LinkedIn"><i
+            data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <header class="hero-full hero-architects" aria-label="Varam Architects">
+      <div class="hero-full-bg" aria-hidden="true"></div>
+      <div class="hero-full-overlay" aria-hidden="true"></div>
+      <div class="hero-full-content container">
+        <p class="eyebrow-yellow">Varam Architects</p>
+        <h1>Architecture rooted in place,<br>shaped by purpose.</h1>
+        <p>We design spaces that respond to the people who inhabit them, the climate that surrounds them, and the site
+          that holds them — creating buildings that age gracefully and serve enduringly.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+          <a href="contact.html" class="btn btn-primary">Start a Project</a>
+          <a href="portfolio.html" class="btn btn-outline-white">View Architecture Portfolio</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- DESIGN PHILOSOPHY -->
+    <section class="philosophy-section">
+      <div class="container">
+        <div class="philosophy-inner">
+          <div class="philosophy-text">
+            <p class="eyebrow">Design Philosophy</p>
+            <h2>We build with honesty — of material, of form, of purpose.</h2>
+            <div class="divider"></div>
+            <p>Varam Architects was established with a conviction that good architecture is not the province of landmark
+              projects or unlimited budgets. It is available to every project that is approached with rigour, care, and
+              an honest understanding of what the space needs to achieve.</p>
+            <p>We do not impose a house style. We listen first — to the brief, to the site, to the climate — and let
+              those conversations lead the design. The result is work that feels specific to its place and its people.
+            </p>
+            <blockquote>A building should not announce itself. It should make the life inside it richer, and be almost
+              invisible in doing so.</blockquote>
+            <p style="font-size:0.875rem;color:var(--text-muted);">[FOUNDING_PARTNER_ATTRIBUTION_PLACEHOLDER]</p>
+          </div>
+          <img src="assets/images/architects/design-process.jpg"
+            alt="Varam Architects design process — site model and drawings in review" class="philosophy-img"
+            loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="architects-services section" id="services">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="eyebrow">What We Design</p>
+          <h2>Architecture services.</h2>
+          <p>From concept to construction documentation — and every phase in between.</p>
+        </div>
+        <div class="architects-services-grid">
+
+          <article class="arch-service-item">
+            <div class="icon-wrap">
+              <i data-lucide="home" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Residential Architecture</h3>
+            <p>Bespoke homes designed around how you actually live — from compact city dwellings to expansive family
+              residences and weekend retreats. Each home is tailored to its occupants and its site.</p>
+          </article>
+
+          <article class="arch-service-item">
+            <div class="icon-wrap">
+              <i data-lucide="building-2" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Commercial Architecture</h3>
+            <p>Offices, retail environments, hospitality spaces, and mixed-use developments designed to perform —
+              attracting occupants, enhancing the user experience, and representing a brand with integrity.</p>
+          </article>
+
+          <article class="arch-service-item">
+            <div class="icon-wrap">
+              <i data-lucide="landmark" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Institutional & Infrastructure</h3>
+            <p>Schools, healthcare facilities, community centres, and public buildings. We understand that institutional
+              buildings carry responsibility beyond their physical walls — they shape behaviour, signal care, and last
+              generations.</p>
+          </article>
+
+          <article class="arch-service-item">
+            <div class="icon-wrap">
+              <i data-lucide="sofa" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Interior Design</h3>
+            <p>Interior environments that complete the architectural vision — from spatial planning and material
+              selection to bespoke joinery, lighting, and finish specification. Integrated from design stage, not
+              applied afterwards.</p>
+          </article>
+
+          <article class="arch-service-item">
+            <div class="icon-wrap">
+              <i data-lucide="map" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Urban Planning & Master Planning</h3>
+            <p>Site-level planning for multi-building developments, housing layouts, township planning, and campus
+              design — balancing density, amenity, movement, and community.</p>
+          </article>
+
+          <article class="arch-service-item">
+            <div class="icon-wrap">
+              <i data-lucide="file-text" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Design Documentation & Approvals</h3>
+            <p>Complete architectural drawings sets, construction documentation, and liaison with statutory authorities
+              for planning permissions and building approvals — ensuring your project is regulatory-ready.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT PROJECTS -->
+    <section class="arch-projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Recent architecture projects.</h2>
+          <p style="color:var(--text-muted);">A selection of residential, commercial, and institutional projects
+            completed by Varam Architects.</p>
+        </div>
+        <div class="grid-3">
+
+          <article>
+            <div class="arch-project-card">
+              <img src="assets/images/portfolio/project-01.jpg" alt="Serene Residences, Adyar — courtyard residence"
+                class="arch-project-img" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+            </div>
+            <div class="arch-project-info">
+              <span class="tag">Residential</span>
+              <h3>Serene Residences, Adyar</h3>
+              <p>A courtyard home designed for natural ventilation and connection to landscape — with exposed concrete,
+                teak joinery, and laterite stone.</p>
+              <a href="portfolio.html" class="arrow-link">View in portfolio <i data-lucide="arrow-right"
+                  style="width:13px;height:13px;"></i></a>
+            </div>
+          </article>
+
+          <article>
+            <div class="arch-project-card">
+              <img src="assets/images/portfolio/project-02.jpg"
+                alt="The Prism Office, Nungambakkam — commercial workspace" class="arch-project-img" loading="lazy"
+                onerror="this.src='assets/images/placeholder.svg'">
+            </div>
+            <div class="arch-project-info">
+              <span class="tag">Commercial</span>
+              <h3>The Prism Office, Nungambakkam</h3>
+              <p>A 12,000 sq ft workspace with a triangulated aluminium facade that filters sunlight without
+                interrupting the street view from inside.</p>
+              <a href="portfolio.html" class="arrow-link">View in portfolio <i data-lucide="arrow-right"
+                  style="width:13px;height:13px;"></i></a>
+            </div>
+          </article>
+
+          <article>
+            <div class="arch-project-card">
+              <img src="assets/images/portfolio/project-05.jpg" alt="Medha School Campus, Tambaram"
+                class="arch-project-img" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+            </div>
+            <div class="arch-project-info">
+              <span class="tag">Institutional</span>
+              <h3>Medha School Campus, Tambaram</h3>
+              <p>A 3-acre school campus planned around shaded outdoor learning corridors, a central gathering lawn, and
+                a clear circulation hierarchy.</p>
+              <a href="portfolio.html" class="arrow-link">View in portfolio <i data-lucide="arrow-right"
+                  style="width:13px;height:13px;"></i></a>
+            </div>
+          </article>
+
+        </div>
+        <div style="margin-top:3rem;">
+          <a href="portfolio.html" class="btn btn-secondary">Full Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band section" aria-labelledby="arch-cta">
+      <div class="container">
+        <div class="cta-band-inner">
+          <div>
+            <h2 id="arch-cta">Thinking about a new building?</h2>
+            <p>Share your brief — we will arrange an initial consultation at no charge.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary">Talk to an Architect</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer-v2">
+
+    <!-- CTA BAND -->
+    <div class="footer-cta-band">
+      <div class="container">
+        <div class="footer-cta-inner">
+          <div class="footer-cta-text">
+            <p class="footer-cta-eyebrow">Ready to begin?</p>
+            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+          </div>
+          <div class="footer-cta-actions">
+            <a href="contact.html" class="btn-footer-primary">Start Your Project <i data-lucide="arrow-right" class="icon-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-main-row">
+
+          <div class="footer-brand-col">
+            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
+            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated lifecycle.</p>
+          </div>
+
+          <div class="footer-links-wrap">
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Services</p>
+              <a href="varam-architects.html" class="footer-link">Varam Architects</a>
+              <a href="shri-associates.html" class="footer-link">Shri Associates</a>
+              <a href="mpms.html" class="footer-link">MPMS</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Company</p>
+              <a href="about.html" class="footer-link">About VARAM</a>
+              <a href="portfolio.html" class="footer-link">Portfolio</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Reach Us</p>
+              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
+              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
+              <span class="footer-link">Chennai, Tamil Nadu</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bar">
+      <div class="container">
+        <div class="footer-bar-inner">
+          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
+          <div class="footer-socials-bar">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up" class="icon-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with VARAM on WhatsApp">
+    <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

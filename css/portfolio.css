@@ -1,0 +1,269 @@
+/* ============================================================
+   portfolio.css — Portfolio page specific styles
+   ============================================================ */
+
+/* ---- Filter Bar ---- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.625rem 1.375rem;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  background-color: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover { border-color: var(--brand-yellow); color: var(--brand-yellow-hover); }
+
+.filter-btn.active {
+  background-color: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+  color: var(--brand-charcoal);
+}
+
+/* ---- Portfolio Grid ---- */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5px;
+}
+
+@media (min-width: 640px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--border);
+  cursor: pointer;
+}
+
+.portfolio-item-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background-color: var(--brand-yellow-tint);
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.portfolio-item:hover .portfolio-item-img {
+  transform: scale(1.06);
+}
+
+.portfolio-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(20, 18, 15, 0.9) 0%, transparent 55%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+  opacity: 1;
+}
+
+.portfolio-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(20, 18, 15, 0.88) 0%, transparent 100%);
+}
+
+.portfolio-item-info h3 {
+  color: var(--white);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.portfolio-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background-color: var(--brand-yellow);
+  color: var(--brand-charcoal);
+  padding: 0.2rem 0.6rem;
+}
+
+.view-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-yellow);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  margin-top: 0.75rem;
+}
+
+/* ---- Lightbox ---- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.lightbox.open {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.35s ease;
+}
+
+.lightbox.open .lightbox-backdrop {
+  background-color: rgba(0, 0, 0, 0.82);
+}
+
+.lightbox-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  overflow-y: auto;
+}
+
+.lightbox-box {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.lightbox.open .lightbox-box {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .lightbox-box {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.lightbox-img-wrap {
+  background-color: var(--brand-yellow-tint);
+  aspect-ratio: 4/3;
+}
+@media (min-width: 768px) { .lightbox-img-wrap { aspect-ratio: auto; } }
+
+.lightbox-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--brand-yellow-tint);
+}
+
+.lightbox-body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lightbox-category {
+  margin-bottom: -0.25rem;
+}
+
+#lightbox-title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--brand-charcoal);
+}
+
+#lightbox-description {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.lightbox-scope-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+  margin-top: 0.5rem;
+}
+
+#lightbox-scope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#lightbox-scope li {
+  font-size: 0.8125rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  background-color: var(--white);
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-charcoal);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.lightbox-close:hover { background-color: var(--brand-yellow); color: var(--brand-charcoal); }

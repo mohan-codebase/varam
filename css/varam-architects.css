@@ -1,0 +1,145 @@
+/* ============================================================
+   varam-architects.css — Varam Architects page specific styles
+   ============================================================ */
+
+/* Hero bg for architects */
+.hero-architects .hero-full-bg {
+  background-image: url('../assets/images/architects/architects-hero.jpg');
+  background-color: var(--brand-yellow-tint);
+}
+
+/* ---- Design Philosophy ---- */
+.philosophy-section {
+  padding: 6rem 0;
+}
+
+.philosophy-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .philosophy-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+.philosophy-text h2 {
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.philosophy-text p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.philosophy-text blockquote {
+  margin: 1.75rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--brand-yellow);
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: var(--brand-charcoal);
+  line-height: 1.6;
+}
+
+.philosophy-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  background-color: var(--brand-yellow-tint);
+}
+
+/* ---- Services (Architects) ---- */
+.architects-services {
+  padding: 5rem 0;
+  background-color: var(--bg-tint);
+}
+
+.architects-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5px;
+}
+
+@media (min-width: 640px) {
+  .architects-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .architects-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.arch-service-item {
+  background-color: var(--white);
+  padding: 2.25rem 2rem;
+  border: 1px solid var(--border);
+  transition: all var(--transition-base);
+}
+
+.arch-service-item:hover {
+  border-color: var(--brand-yellow);
+  background-color: var(--brand-yellow-tint);
+}
+
+.arch-service-item .icon-wrap {
+  color: var(--brand-yellow);
+  margin-bottom: 1.25rem;
+}
+
+.arch-service-item h3 {
+  font-size: 1.0625rem;
+  margin-bottom: 0.625rem;
+}
+
+.arch-service-item p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ---- Featured Architecture Projects ---- */
+.arch-projects {
+  padding: 5rem 0;
+}
+
+.arch-project-card {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--border);
+}
+
+.arch-project-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background-color: var(--brand-yellow-tint);
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.arch-project-card:hover .arch-project-img {
+  transform: scale(1.05);
+}
+
+.arch-project-info {
+  padding: 1.5rem;
+}
+
+.arch-project-info h3 {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.arch-project-info p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}

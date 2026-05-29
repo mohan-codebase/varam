@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact VARAM — Start Your Project</title>
+  <meta name="description"
+    content="Get in touch with VARAM — for architecture, construction, property management, or any general enquiry. We respond within one working day.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://varam.co/contact.html">
+  <meta property="og:title" content="Contact VARAM — Start Your Project">
+  <meta property="og:description"
+    content="Architecture, construction, or property management enquiry — get in touch and we will respond within one working day.">
+  <meta property="og:image" content="https://varam.co/assets/images/og-contact.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact VARAM">
+  <meta name="twitter:image" content="https://varam.co/assets/images/og-contact.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#EBBE41', 'yellow-hover': '#D4A82E',
+              'yellow-tint': '#FBF1D4', charcoal: '#3C3B39',
+              text: '#2A2A28', muted: '#6B6A67',
+              border: '#E5E2DC', tint: '#FAF8F3',
+            },
+          },
+          fontFamily: { sans: ['Jost', 'system-ui', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav id="main-nav" class="nav-solid" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About VARAM</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Services <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="varam-architects.html" class="nav-dropdown-item">Varam Architects</a>
+              <a href="shri-associates.html" class="nav-dropdown-item">Shri Associates</a>
+              <a href="mpms.html" class="nav-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="portfolio.html#architecture" class="nav-dropdown-item">Architecture Projects</a>
+              <a href="portfolio.html#construction" class="nav-dropdown-item">Construction Projects</a>
+              <a href="portfolio.html#renovation" class="nav-dropdown-item">Renovation Projects</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-link">Contact / Enquiry</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+    <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" style="height:2.75rem; width:auto; object-fit:contain;">
+        <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
+          <i data-lucide="x" style="width:20px;height:20px;"></i>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About VARAM</a>
+        <div class="drawer-item">
+          <button class="drawer-link">Services <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="varam-architects.html" class="drawer-dropdown-item">Varam Architects</a>
+            <a href="shri-associates.html" class="drawer-dropdown-item">Shri Associates</a>
+            <a href="mpms.html" class="drawer-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+          </div>
+        </div>
+        <div class="drawer-item">
+          <button class="drawer-link">Portfolio <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="portfolio.html#architecture" class="drawer-dropdown-item">Architecture Projects</a>
+            <a href="portfolio.html#construction" class="drawer-dropdown-item">Construction Projects</a>
+            <a href="portfolio.html#renovation" class="drawer-dropdown-item">Renovation Projects</a>
+          </div>
+        </div>
+        <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
+      </nav>
+      <div class="drawer-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start Your Project</a>
+      </div>
+      <div class="drawer-social">
+        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Instagram"><i
+            data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Facebook"><i
+            data-lucide="facebook" style="width:18px;height:18px;"></i></a>
+        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on LinkedIn"><i
+            data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- PAGE INTRO -->
+    <header class="contact-intro">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's talk about your project.</h1>
+        <p>Whether you are at the very beginning of an idea or mid-way through a project that needs expert input — we
+          are happy to hear from you. We respond within one working day.</p>
+      </div>
+    </header>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="contact-layout">
+      <div class="container">
+        <div class="contact-inner">
+
+          <!-- FORM COLUMN -->
+          <div class="contact-form-col">
+            <h2>Send us a message.</h2>
+            <p>Fill in the form below and tell us a little about your project. The right person from our team will be in
+              touch.</p>
+
+            <div id="form-success" role="alert">
+              <p><strong>Thank you — your message has been sent.</strong> We will be in touch within one working day.
+              </p>
+            </div>
+            <div id="form-error" role="alert"></div>
+
+            <form id="contact-form" novalidate>
+
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input class="form-input" type="text" id="name" name="name" autocomplete="name" required data-required
+                  aria-required="true" placeholder="Your full name">
+                <p class="form-error" id="name-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" autocomplete="email" required
+                  data-required aria-required="true" placeholder="your@email.com">
+                <p class="form-error" id="email-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel"
+                  placeholder="+91 98765 43210">
+                <p class="form-error" id="phone-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="service">Service Interest <span aria-hidden="true">*</span></label>
+                <div class="form-select-wrapper">
+                  <select class="form-select" id="service" name="service" required data-required aria-required="true">
+                    <option value="">Select a service…</option>
+                    <option value="Architecture">Architecture — Varam Architects</option>
+                    <option value="Construction">Construction — Shri Associates</option>
+                    <option value="Property Management">Property Management — MPMS</option>
+                    <option value="Full Ecosystem">Full VARAM Ecosystem (Design + Build + Manage)</option>
+                    <option value="Other">Other / General Enquiry</option>
+                  </select>
+                </div>
+                <p class="form-error" id="service-error" role="alert"></p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Your Message <span aria-hidden="true">*</span></label>
+                <textarea class="form-textarea" id="message" name="message" required data-required aria-required="true"
+                  placeholder="Tell us about your project — location, scope, stage, timeline, and any other relevant details."></textarea>
+                <p class="form-error" id="message-error" role="alert"></p>
+              </div>
+
+              <button type="submit" id="form-submit" class="btn btn-primary"
+                style="width:100%;justify-content:center;padding:1rem;">
+                Send Message
+              </button>
+              <p style="font-size:0.8125rem;color:var(--text-muted);margin-top:0.875rem;">
+                By submitting this form you agree that VARAM may contact you regarding your enquiry. We do not share
+                your data with third parties.
+              </p>
+
+            </form>
+          </div>
+
+          <!-- INFO COLUMN -->
+          <div class="contact-info-col">
+            <h2>Contact information.</h2>
+
+            <div class="info-block">
+              <div class="info-item">
+                <div class="info-item-icon">
+                  <i data-lucide="map-pin" style="width:18px;height:18px;stroke-width:1.5;"></i>
+                </div>
+                <div class="info-item-body">
+                  <p class="label">Office Address</p>
+                  <p>No. 12, Second Main Road, Gandhi Nagar, Adyar, Chennai - 600020</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-item-icon">
+                  <i data-lucide="phone" style="width:18px;height:18px;stroke-width:1.5;"></i>
+                </div>
+                <div class="info-item-body">
+                  <p class="label">Phone</p>
+                  <a href="tel:+914442101234">+91 44 4210 1234</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-item-icon">
+                  <i data-lucide="mail" style="width:18px;height:18px;stroke-width:1.5;"></i>
+                </div>
+                <div class="info-item-body">
+                  <p class="label">Email</p>
+                  <a href="mailto:hello@varam.co">hello@varam.co</a>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-item-icon">
+                  <i data-lucide="clock" style="width:18px;height:18px;stroke-width:1.5;"></i>
+                </div>
+                <div class="info-item-body">
+                  <p class="label">Working Hours</p>
+                  <p>Mon – Sat: 9:00 am – 6:00 pm<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Per-company quick contact -->
+            <div class="quick-contact">
+              <h4>Reach the right team directly</h4>
+              <div class="quick-contact-list">
+                <div class="quick-contact-item">
+                  <div>
+                    <strong>Varam Architects</strong><br>
+                    <span>Architecture & Interior Design</span>
+                  </div>
+                  <a href="mailto:hello@varam.co" style="font-size:0.8125rem;color:var(--brand-yellow);">Email →</a>
+                </div>
+                <div class="quick-contact-item">
+                  <div>
+                    <strong>Shri Associates</strong><br>
+                    <span>Construction & Execution</span>
+                  </div>
+                  <a href="mailto:hello@varam.co" style="font-size:0.8125rem;color:var(--brand-yellow);">Email →</a>
+                </div>
+                <div class="quick-contact-item">
+                  <div>
+                    <strong>MPMS</strong><br>
+                    <span>Property Management</span>
+                  </div>
+                  <a href="mailto:hello@varam.co" style="font-size:0.8125rem;color:var(--brand-yellow);">Email →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-wrap" aria-label="Office location map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.388836528741!2d80.25204481534963!3d13.010901590830155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267bf0f9a2b5d%3A0x6b1076b325253fd6!2sSecond%20Main%20Rd%2C%20Gandhi%20Nagar%2C%20Adyar%2C%20Chennai%2C%20Tamil%20Nadu%20600020!5e0!3m2!1sen!2sin!4v1622287456789!5m2!1sen!2sin"
+                title="VARAM Office Location"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                style="width:100%;height:100%;border:none;"
+              ></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer-v2">
+
+    <!-- CTA BAND -->
+    <div class="footer-cta-band">
+      <div class="container">
+        <div class="footer-cta-inner">
+          <div class="footer-cta-text">
+            <p class="footer-cta-eyebrow">Ready to begin?</p>
+            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+          </div>
+          <div class="footer-cta-actions">
+            <a href="contact.html" class="btn-footer-primary">Start Your Project <i data-lucide="arrow-right" class="icon-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-main-row">
+
+          <div class="footer-brand-col">
+            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
+            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated lifecycle.</p>
+          </div>
+
+          <div class="footer-links-wrap">
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Services</p>
+              <a href="varam-architects.html" class="footer-link">Varam Architects</a>
+              <a href="shri-associates.html" class="footer-link">Shri Associates</a>
+              <a href="mpms.html" class="footer-link">MPMS</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Company</p>
+              <a href="about.html" class="footer-link">About VARAM</a>
+              <a href="portfolio.html" class="footer-link">Portfolio</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Reach Us</p>
+              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
+              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
+              <span class="footer-link">Chennai, Tamil Nadu</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bar">
+      <div class="container">
+        <div class="footer-bar-inner">
+          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
+          <div class="footer-socials-bar">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up" class="icon-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with VARAM on WhatsApp">
+    <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "VARAM",
+  "description": "Architecture, construction, and property management — integrated built-environment services.",
+  "url": "https://varam.co",
+  "telephone": "+91 44 4210 1234",
+  "email": "hello@varam.co",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 12, Second Main Road, Gandhi Nagar",
+    "addressLocality": "Chennai",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "600020",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": ["https://instagram.com/varam.ecosystem", "https://facebook.com/varam.ecosystem", "https://linkedin.com/company/varam-ecosystem"]
+}
+</script>
+</body>
+
+</html>

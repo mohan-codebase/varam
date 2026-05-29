@@ -1,0 +1,14 @@
+{
+  "name": "varam-website",
+  "version": "1.0.0",
+  "description": "VARAM — Design. Build. Manage. Static multi-page website.",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}

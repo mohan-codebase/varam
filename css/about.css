@@ -1,0 +1,250 @@
+/* ============================================================
+   about.css — About page specific styles
+   ============================================================ */
+
+/* ---- Vision & Philosophy ---- */
+.vision-section {
+  padding: 6rem 0;
+}
+
+.vision-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .vision-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}
+
+.vision-text h2 {
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.vision-text p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.vision-text p:last-child {
+  margin-bottom: 0;
+}
+
+.vision-img-wrap {
+  position: relative;
+}
+
+.vision-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  background-color: var(--brand-yellow-tint);
+}
+
+.vision-img-label {
+  position: absolute;
+  bottom: 1.25rem;
+  left: -1.25rem;
+  background-color: var(--brand-yellow);
+  padding: 0.875rem 1.25rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .vision-img-label {
+    display: block;
+  }
+}
+
+.vision-img-label p {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+}
+
+/* ---- Integrated Approach ---- */
+.approach-section {
+  padding: 5rem 0;
+  background-color: var(--bg-tint);
+}
+
+.approach-flow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+
+@media (min-width: 768px) {
+  .approach-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.approach-card {
+  background-color: var(--white);
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.approach-card-num {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--brand-yellow-tint);
+  line-height: 1;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.approach-card-icon {
+  color: var(--brand-yellow);
+  margin-bottom: 1.25rem;
+}
+
+.approach-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.approach-card p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.approach-card .company-tag {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-yellow);
+  border-bottom: 1px solid var(--brand-yellow);
+  margin-top: 1.25rem;
+}
+
+/* ---- Why VARAM ---- */
+.why-section {
+  padding: 5rem 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.why-item {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  transition: border-color var(--transition-base);
+}
+
+.why-item:hover {
+  border-color: var(--brand-yellow);
+}
+
+.why-item-icon {
+  color: var(--brand-yellow);
+  margin-bottom: 1rem;
+}
+
+.why-item h3 {
+  font-size: 1.0625rem;
+  margin-bottom: 0.625rem;
+}
+
+.why-item p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* ---- Team Section ---- */
+.team-section {
+  padding: 5rem 0;
+  background-color: var(--bg-tint);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.team-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+}
+
+.team-card-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  background-color: var(--brand-yellow-tint);
+}
+
+.team-card-body {
+  padding: 1.5rem;
+}
+
+.team-card h3 {
+  margin-bottom: 0.25rem;
+}
+
+.team-card .role {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.875rem;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+font-weight: 300;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(--text-muted);
+margin-bottom: 0.875rem;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}

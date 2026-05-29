@@ -1,0 +1,233 @@
+/* ============================================================
+   mpms.css — MPMS page specific styles
+   ============================================================ */
+
+/* Hero bg */
+.hero-mpms .hero-full-bg {
+  background-image: url('../assets/images/mpms/mpms-hero.jpg');
+  background-color: var(--brand-yellow-tint);
+  background-position: center;
+}
+
+/* ---- Positioning Intro ---- */
+.mpms-intro {
+  padding: 6rem 0;
+}
+
+.mpms-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .mpms-intro-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+.mpms-intro-text h2 {
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.mpms-intro-text p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.mpms-for-who {
+  background-color: var(--bg-tint);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--brand-yellow);
+  padding: 2rem;
+}
+
+.mpms-for-who h4 {
+  margin-bottom: 1rem;
+  color: var(--brand-charcoal);
+}
+
+.mpms-for-who ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.mpms-for-who li {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.mpms-for-who li::before {
+  content: '';
+  display: block;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  background-color: var(--brand-yellow);
+  flex-shrink: 0;
+  margin-top: 0.4375rem;
+}
+
+/* ---- Services (MPMS) ---- */
+.mpms-services {
+  padding: 5rem 0;
+  background-color: var(--bg-tint);
+}
+
+.mpms-service-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  padding: 2.25rem 2rem;
+  transition: all var(--transition-base);
+}
+
+.mpms-service-card:hover {
+  border-color: var(--brand-yellow);
+  box-shadow: 6px 6px 0 var(--brand-yellow-tint);
+}
+
+.mpms-service-icon {
+  color: var(--brand-yellow);
+  margin-bottom: 1.25rem;
+}
+
+.mpms-service-card h3 {
+  margin-bottom: 0.625rem;
+}
+
+.mpms-service-card p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* ---- How It Works ---- */
+.how-it-works {
+  padding: 5rem 0;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.step-card {
+  position: relative;
+}
+
+.step-card::after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  right: -1.25rem;
+  width: 2.5rem;
+  height: 1px;
+  background-color: var(--border);
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .step-card:not(:last-child)::after {
+    display: block;
+  }
+}
+
+.step-number-circle {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--brand-yellow-tint);
+  border: 2px solid var(--brand-yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--brand-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+.step-card h3 {
+  font-size: 1.0625rem;
+  margin-bottom: 0.625rem;
+}
+
+.step-card p {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+/* ---- Trust Indicators / Testimonials ---- */
+.mpms-trust { padding: 5rem 0; background-color: var(--bg-tint); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.testimonial-card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(60, 59, 57, 0.02);
+}
+.testimonial-card blockquote {
+  font-size: 1.0625rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-card blockquote::before {
+  content: '\201C';
+  font-size: 3rem;
+  color: var(--brand-yellow);
+  line-height: 0;
+  vertical-align: -1rem;
+  margin-right: 0.25rem;
+}
+
+.testimonial-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.testimonial-avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--brand-yellow-tint);
+  overflow: hidden;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--brand-charcoal);
+}
+
+.testimonial-location {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}

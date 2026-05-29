@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPMS — Property Management for Owners | VARAM</title>
+  <meta name="description"
+    content="Meenakshi Property Management Services (MPMS) — inspection, condition reporting, maintenance supervision, and periodic monitoring for property owners who cannot always be present.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://varam.co/mpms.html">
+  <meta property="og:title" content="MPMS — Your Property in Safe Hands">
+  <meta property="og:description"
+    content="Professional property management for owners who cannot always be there in person. Inspection, reporting, and maintenance coordination.">
+  <meta property="og:image" content="https://varam.co/assets/images/og-mpms.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MPMS — Property Management">
+  <meta name="twitter:image" content="https://varam.co/assets/images/og-mpms.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#EBBE41', 'yellow-hover': '#D4A82E',
+              'yellow-tint': '#FBF1D4', charcoal: '#3C3B39',
+              text: '#2A2A28', muted: '#6B6A67',
+              border: '#E5E2DC', tint: '#FAF8F3',
+            },
+          },
+          fontFamily: { sans: ['Jost', 'system-ui', 'sans-serif'] },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/mpms.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav id="main-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About VARAM</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Services <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="varam-architects.html" class="nav-dropdown-item">Varam Architects</a>
+              <a href="shri-associates.html" class="nav-dropdown-item">Shri Associates</a>
+              <a href="mpms.html" class="nav-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="portfolio.html#architecture" class="nav-dropdown-item">Architecture Projects</a>
+              <a href="portfolio.html#construction" class="nav-dropdown-item">Construction Projects</a>
+              <a href="portfolio.html#renovation" class="nav-dropdown-item">Renovation Projects</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-link">Contact / Enquiry</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <button id="nav-hamburger" class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation">
+    <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" style="height:2.75rem; width:auto; object-fit:contain;">
+        <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
+          <i data-lucide="x" style="width:20px;height:20px;"></i>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About VARAM</a>
+        <div class="drawer-item">
+          <button class="drawer-link">Services <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="varam-architects.html" class="drawer-dropdown-item">Varam Architects</a>
+            <a href="shri-associates.html" class="drawer-dropdown-item">Shri Associates</a>
+            <a href="mpms.html" class="drawer-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+          </div>
+        </div>
+        <div class="drawer-item">
+          <button class="drawer-link">Portfolio <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="portfolio.html#architecture" class="drawer-dropdown-item">Architecture Projects</a>
+            <a href="portfolio.html#construction" class="drawer-dropdown-item">Construction Projects</a>
+            <a href="portfolio.html#renovation" class="drawer-dropdown-item">Renovation Projects</a>
+          </div>
+        </div>
+        <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
+      </nav>
+      <div class="drawer-cta">
+        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Enquire About
+          Management</a>
+      </div>
+      <div class="drawer-social">
+        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Instagram"><i
+            data-lucide="instagram" style="width:18px;height:18px;"></i></a>
+        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Facebook"><i
+            data-lucide="facebook" style="width:18px;height:18px;"></i></a>
+        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on LinkedIn"><i
+            data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <header class="hero-full hero-mpms" aria-label="MPMS — Meenakshi Property Management Services">
+      <div class="hero-full-bg" aria-hidden="true"></div>
+      <div class="hero-full-overlay" aria-hidden="true"></div>
+      <div class="hero-full-content container">
+        <p class="eyebrow-yellow">MPMS — Meenakshi Property Management Services</p>
+        <h1>Your property in safe hands —<br>wherever you are.</h1>
+        <p>MPMS provides structured, transparent property management for owners who cannot always be present in person —
+          including NRI owners managing assets from abroad.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+          <a href="contact.html" class="btn btn-primary">Enquire About Management</a>
+          <a href="#how-it-works" class="btn btn-outline-white">How It Works</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="mpms-intro section">
+      <div class="container">
+        <div class="mpms-intro-inner">
+          <div class="mpms-intro-text">
+            <p class="eyebrow">What We Do</p>
+            <h2>Property management for owners who cannot always be there.</h2>
+            <div class="divider"></div>
+            <p>A property left unattended deteriorates quietly and quickly. Hairline cracks become structural problems.
+              Plumbing leaks become damp. Vacant properties become targets. By the time an absentee owner discovers an
+              issue, it has typically become expensive to fix.</p>
+            <p>MPMS exists to prevent that. We provide regular physical inspections, clear photographic condition
+              reports, prompt coordination of repairs, and a single, reliable point of contact who knows your property
+              as well as you do — and takes the same care with it.</p>
+            <p>We work with individual homeowners, NRI families managing inherited properties, investors with multiple
+              units, and landlords who simply want someone dependable on the ground.</p>
+          </div>
+          <div class="mpms-for-who">
+            <h4>MPMS is particularly valuable for:</h4>
+            <ul>
+              <li>NRI families with inherited or investment property in India</li>
+              <li>Property investors managing multiple units across the city</li>
+              <li>Owners who have relocated and cannot visit regularly</li>
+              <li>Landlords whose tenants have vacated and the property is unoccupied</li>
+              <li>Owners managing post-construction defect periods</li>
+              <li>Anyone who wants structured, documented accountability for their property</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="mpms-services section section-tint" id="services">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="eyebrow">What We Provide</p>
+          <h2>Property management services.</h2>
+          <p>A structured programme of physical visits, condition monitoring, and coordinated upkeep — delivered with
+            clear documentation at every stage.</p>
+        </div>
+        <div class="grid-3">
+
+          <article class="mpms-service-card">
+            <div class="mpms-service-icon">
+              <i data-lucide="search" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Property Inspection</h3>
+            <p>Regular physical inspections by our team — checking structural condition, security, cleanliness, and
+              general upkeep. Frequency tailored to your property type and occupancy status.</p>
+          </article>
+
+          <article class="mpms-service-card">
+            <div class="mpms-service-icon">
+              <i data-lucide="file-text" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Condition Assessment Reports</h3>
+            <p>Detailed written reports with photographs documenting property condition after every inspection — giving
+              you a clear, timestamped record you can act on from anywhere in the world.</p>
+          </article>
+
+          <article class="mpms-service-card">
+            <div class="mpms-service-icon">
+              <i data-lucide="settings" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Maintenance Supervision</h3>
+            <p>We identify maintenance needs early, source reliable contractors, supervise the work on your behalf, and
+              confirm quality before closing out any job — so you are never managing tradespeople remotely.</p>
+          </article>
+
+          <article class="mpms-service-card">
+            <div class="mpms-service-icon">
+              <i data-lucide="wrench" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Coordination of Repairs & Upkeep</h3>
+            <p>From a leaking pipe to a full repaint — MPMS coordinates all works, manages approvals from owners,
+              obtains quotes, and supervises completion. All expenditure is documented and approved before commitment.
+            </p>
+          </article>
+
+          <article class="mpms-service-card">
+            <div class="mpms-service-icon">
+              <i data-lucide="eye" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Periodic Property Monitoring</h3>
+            <p>For unoccupied properties — scheduled visits to check that the property is secure, utilities are
+              functioning, and no encroachment, damage, or squatting has occurred.</p>
+          </article>
+
+          <article class="mpms-service-card">
+            <div class="mpms-service-icon">
+              <i data-lucide="message-square" style="width:28px;height:28px;stroke-width:1;"></i>
+            </div>
+            <h3>Owner Communication & Reporting</h3>
+            <p>Monthly summary reports, urgent issue notifications, and on-call support for questions — keeping you
+              fully informed without requiring you to chase for updates.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works section" id="how-it-works">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="eyebrow">The Process</p>
+          <h2>How we manage your property.</h2>
+          <p>A straightforward four-step process — from your first enquiry to ongoing peace of mind.</p>
+        </div>
+        <div class="steps-grid">
+
+          <div class="step-card">
+            <div class="step-number-circle" aria-hidden="true">01</div>
+            <h3>Initial Assessment</h3>
+            <p>We visit your property, document its current condition thoroughly, and agree on a management plan that
+              fits your requirements and budget — including inspection frequency and reporting format.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-circle" aria-hidden="true">02</div>
+            <h3>Management Agreement</h3>
+            <p>A clear written agreement setting out our responsibilities, your authorisations, reporting schedules, and
+              the maintenance approval process — so there are no ambiguities.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-circle" aria-hidden="true">03</div>
+            <h3>Active Management</h3>
+            <p>Regular inspections, condition reports, proactive identification of issues, and coordination of approved
+              maintenance works — all managed by a named contact who knows your property.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-circle" aria-hidden="true">04</div>
+            <h3>Regular Reporting</h3>
+            <p>Monthly summary reports delivered to your email — photographs, condition updates, works completed,
+              upcoming maintenance, and a clear financial summary of any expenditure.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / TESTIMONIALS -->
+    <section class="mpms-trust section" aria-label="What our clients say">
+      <div class="container">
+        <div class="section-header centered">
+          <p class="eyebrow-yellow">Owner Testimonials</p>
+          <h2>What our clients say.</h2>
+          <p>[TESTIMONIAL_PLACEHOLDER — add real client testimonials here. Replace
+            the placeholders below with actual quotes from property owners MPMS has served.]</p>
+        </div>
+        <div class="grid-2">
+
+          <article class="testimonial-card">
+            <blockquote>[TESTIMONIAL_PLACEHOLDER — A 2–3 sentence quote from an NRI property owner about how MPMS helped
+              them manage their property from abroad — the peace of mind, the quality of reports, the reliability of the
+              team.]</blockquote>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar">
+                <img src="assets/images/placeholder.svg" alt="" aria-hidden="true">
+              </div>
+              <div>
+                <p class="testimonial-name">[CLIENT_NAME_PLACEHOLDER]</p>
+                <p class="testimonial-location">Property owner, based in [CITY/COUNTRY_PLACEHOLDER]</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>[TESTIMONIAL_PLACEHOLDER — A 2–3 sentence quote from a local investor or landlord about how MPMS
+              handles their multi-unit property — the maintenance coordination, the prompt reporting, the
+              trustworthiness of the team.]</blockquote>
+            <div class="testimonial-meta">
+              <div class="testimonial-avatar">
+                <img src="assets/images/placeholder.svg" alt="" aria-hidden="true">
+              </div>
+              <div>
+                <p class="testimonial-name">[CLIENT_NAME_PLACEHOLDER]</p>
+                <p class="testimonial-location">Property investor, [CITY_PLACEHOLDER]</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band section" aria-labelledby="mpms-cta">
+      <div class="container">
+        <div class="cta-band-inner">
+          <div>
+            <h2 id="mpms-cta">Ready to hand over the keys — with confidence?</h2>
+            <p>Tell us about your property and we will outline the right management plan for you.</p>
+          </div>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer-v2">
+
+    <!-- CTA BAND -->
+    <div class="footer-cta-band">
+      <div class="container">
+        <div class="footer-cta-inner">
+          <div class="footer-cta-text">
+            <p class="footer-cta-eyebrow">Ready to begin?</p>
+            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+          </div>
+          <div class="footer-cta-actions">
+            <a href="contact.html" class="btn-footer-primary">Start Your Project <i data-lucide="arrow-right" class="icon-xs"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-main-row">
+
+          <div class="footer-brand-col">
+            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
+            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated lifecycle.</p>
+          </div>
+
+          <div class="footer-links-wrap">
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Services</p>
+              <a href="varam-architects.html" class="footer-link">Varam Architects</a>
+              <a href="shri-associates.html" class="footer-link">Shri Associates</a>
+              <a href="mpms.html" class="footer-link">MPMS</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Company</p>
+              <a href="about.html" class="footer-link">About VARAM</a>
+              <a href="portfolio.html" class="footer-link">Portfolio</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-link-group">
+              <p class="footer-link-heading">Reach Us</p>
+              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
+              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
+              <span class="footer-link">Chennai, Tamil Nadu</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bar">
+      <div class="container">
+        <div class="footer-bar-inner">
+          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
+          <div class="footer-socials-bar">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
+          </div>
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up" class="icon-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with VARAM on WhatsApp">
+    <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

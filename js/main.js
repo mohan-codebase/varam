@@ -1,0 +1,156 @@
+/* ============================================================
+   main.js — VARAM Website
+   Shared: navigation scroll, mobile drawer, hero slideshow,
+   Lucide icons init, active nav link, smooth scroll
+   ============================================================ */
+
+; (function () {
+  'use strict'
+
+  // ---- Navigation Scroll Behaviour ----
+  var nav = document.getElementById('main-nav')
+  var heroHome = document.querySelector('.hero-home')
+
+  function updateNav() {
+    if (!nav) return
+    if (heroHome) {
+      if (window.scrollY > 72) {
+        nav.classList.add('nav-scrolled')
+      } else {
+        nav.classList.remove('nav-scrolled')
+      }
+    }
+    // Non-hero pages already have nav-solid set in HTML
+  }
+
+  if (nav) {
+    window.addEventListener('scroll', updateNav, { passive: true })
+    updateNav()
+  }
+
+  // ---- Mobile Drawer ----
+  var hamburger = document.getElementById('nav-hamburger')
+  var drawer = document.getElementById('mobile-drawer')
+  var drawerOverlay = document.getElementById('drawer-overlay')
+  var drawerClose = document.getElementById('drawer-close')
+  var lastFocus
+
+  function openDrawer() {
+    if (!drawer) return
+    lastFocus = document.activeElement
+    drawer.classList.add('open')
+    document.body.style.overflow = 'hidden'
+    hamburger.classList.add('open')
+    hamburger.setAttribute('aria-expanded', 'true')
+    drawerClose && drawerClose.focus()
+  }
+
+  function closeDrawer() {
+    if (!drawer) return
+    drawer.classList.remove('open')
+    document.body.style.overflow = ''
+    hamburger.classList.remove('open')
+    hamburger.setAttribute('aria-expanded', 'false')
+    lastFocus && lastFocus.focus()
+  }
+
+  if (hamburger) hamburger.addEventListener('click', openDrawer)
+  if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer)
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer)
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && drawer && drawer.classList.contains('open')) {
+      closeDrawer()
+    }
+  })
+
+  // Mobile drawer links and accordions
+  if (drawer) {
+    drawer.querySelectorAll('.drawer-link').forEach(function (link) {
+      link.addEventListener('click', function(e) {
+        var parentItem = link.closest('.drawer-item');
+        if (parentItem && parentItem.querySelector('.drawer-dropdown')) {
+          e.preventDefault();
+          parentItem.classList.toggle('open');
+        } else {
+          closeDrawer();
+        }
+      });
+    });
+  }
+
+  // ---- Hero Slideshow ----
+  var slides = document.querySelectorAll('.hero-slide')
+  var dots = document.querySelectorAll('.hero-dot')
+  var currentSlide = 0
+  var slideTimer
+
+  function activateSlide(index) {
+    slides[currentSlide].classList.remove('active')
+    if (dots[currentSlide]) dots[currentSlide].classList.remove('active')
+    currentSlide = ((index % slides.length) + slides.length) % slides.length
+    slides[currentSlide].classList.add('active')
+    if (dots[currentSlide]) dots[currentSlide].classList.add('active')
+  }
+
+  function nextSlide() { activateSlide(currentSlide + 1) }
+
+  function startAutoplay() { slideTimer = setInterval(nextSlide, 5500) }
+  function stopAutoplay() { clearInterval(slideTimer) }
+  function restartAutoplay() { stopAutoplay(); startAutoplay() }
+
+  if (slides.length > 1) {
+    activateSlide(0)
+    startAutoplay()
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () { activateSlide(i); restartAutoplay() })
+    })
+
+    // Pause on hover for accessibility
+    var heroEl = document.querySelector('.hero-home')
+    if (heroEl) {
+      heroEl.addEventListener('mouseenter', stopAutoplay)
+      heroEl.addEventListener('mouseleave', startAutoplay)
+    }
+  } else if (slides.length === 1) {
+    slides[0].classList.add('active')
+  }
+
+  // ---- Lucide Icons ----
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons()
+  }
+
+  // ---- Active Nav Link ----
+  var currentFile = window.location.pathname.split('/').pop() || 'index.html'
+  document.querySelectorAll('.nav-link, .drawer-link').forEach(function (link) {
+    var href = link.getAttribute('href') || ''
+    if (href === currentFile || (currentFile === '' && href === 'index.html')) {
+      link.classList.add('active')
+    }
+  })
+
+  // ---- Smooth Scroll (in-page anchors) ----
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var id = this.getAttribute('href')
+      var target = document.querySelector(id)
+      if (target) {
+        e.preventDefault()
+        var navHeight = nav ? nav.offsetHeight : 0
+        var top = target.getBoundingClientRect().top + window.scrollY - navHeight - 16
+        window.scrollTo({ top: top, behavior: 'smooth' })
+      }
+    })
+  })
+
+  // ---- Lazy-image fallback colour ----
+  document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
+    if (!img.dataset.fallbackSet) {
+      img.dataset.fallbackSet = '1'
+      img.style.backgroundColor = '#FAF8F3'
+    }
+  })
+
+})()
