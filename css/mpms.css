@@ -4,7 +4,7 @@
 
 /* Hero bg */
 .hero-mpms .hero-full-bg {
-  background-image: url('../assets/images/mpms/mpms-hero.jpg');
+  background-image: url('https://images.unsplash.com/photo-1764996915324-91919cee14d3?w=1920&q=90&auto=format&fit=crop');
   background-color: var(--brand-yellow-tint);
   background-position: center;
 }
@@ -42,6 +42,7 @@
   background-color: var(--bg-tint);
   border: 1px solid var(--border);
   border-left: 3px solid var(--brand-yellow);
+  border-radius: 0.375rem;
   padding: 2rem;
 }
 
@@ -83,6 +84,7 @@
 .mpms-service-card {
   background-color: var(--white);
   border: 1px solid var(--border);
+  border-radius: 0.375rem;
   padding: 2.25rem 2rem;
   transition: all var(--transition-base);
 }
@@ -182,6 +184,7 @@
   border: 1px solid var(--border);
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(60, 59, 57, 0.02);
+  border-radius: 0.375rem;
 }
 .testimonial-card blockquote {
   font-size: 1.0625rem;

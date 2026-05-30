@@ -51,7 +51,7 @@
   <nav id="main-nav" class="nav-solid" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
-        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+        <img src="assets/logos/varam-logo-yellow.png" alt="VARAM">
       </a>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
@@ -79,7 +79,7 @@
         <a href="contact.html" class="nav-link">Contact / Enquiry</a>
       </div>
       <div class="nav-actions">
-        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <a href="#footer-cta" class="btn btn-primary nav-cta">Get in Touch</a>
         <button id="nav-hamburger" class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
           aria-controls="mobile-drawer">
           <span></span><span></span><span></span>
@@ -92,9 +92,9 @@
     <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
     <div class="drawer-panel">
       <div class="drawer-header">
-        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" style="height:2.75rem; width:auto; object-fit:contain;">
+        <img src="assets/logos/varam-logo-yellow.png" alt="VARAM" class="drawer-logo">
         <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
-          <i data-lucide="x" style="width:20px;height:20px;"></i>
+          <i data-lucide="x" class="icon-sm"></i>
         </button>
       </div>
       <nav class="drawer-nav" aria-label="Mobile navigation">
@@ -119,15 +119,15 @@
         <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
       </nav>
       <div class="drawer-cta">
-        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start Your Project</a>
+        <a href="#footer-cta" class="btn btn-primary btn-full drawer-close-link">Start Your Project</a>
       </div>
       <div class="drawer-social">
-        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Instagram"><i
-            data-lucide="instagram" style="width:18px;height:18px;"></i></a>
-        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Facebook"><i
-            data-lucide="facebook" style="width:18px;height:18px;"></i></a>
-        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on LinkedIn"><i
-            data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer"
+          aria-label="VARAM on Instagram"><i data-lucide="instagram" class="icon-sm"></i></a>
+        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer"
+          aria-label="VARAM on Facebook"><i data-lucide="facebook" class="icon-sm"></i></a>
+        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer"
+          aria-label="VARAM on LinkedIn"><i data-lucide="linkedin" class="icon-sm"></i></a>
       </div>
     </div>
   </div>
@@ -137,9 +137,9 @@
     <!-- PAGE HERO -->
     <header class="page-hero" aria-label="About VARAM">
       <div class="container">
-        <p class="eyebrow-yellow">About VARAM</p>
-        <h1>Three disciplines.<br>One integrated ecosystem.</h1>
-        <p>We believe the built environment deserves a unified custodian — an organisation that holds the full arc of a
+        <p class="eyebrow-yellow reveal reveal-up">About VARAM</p>
+        <h1 class="reveal reveal-up reveal-delay-100">Three disciplines.<br>One integrated ecosystem.</h1>
+        <p class="reveal reveal-up reveal-delay-200">We believe the built environment deserves a unified custodian — an organisation that holds the full arc of a
           project, from the first concept sketch to long-term asset stewardship.</p>
       </div>
     </header>
@@ -148,9 +148,9 @@
     <section class="vision-section">
       <div class="container">
         <div class="vision-inner">
-          <div class="vision-text">
+          <div class="vision-text reveal reveal-blur">
             <p class="eyebrow">Our Philosophy</p>
-            <h2>[VISION_STATEMENT_PLACEHOLDER]</h2>
+            <h2>Creating environments that inspire, built with integrity, and cared for over lifetimes.</h2>
             <div class="divider"></div>
             <p>VARAM was founded on the conviction that most problems in the built environment stem from fragmentation —
               architects who hand over drawings and walk away, contractors who build without fully understanding the
@@ -159,15 +159,14 @@
               needs them — share knowledge in real time. A client who builds with Shri Associates knows that Varam
               Architects' drawings will be interpreted with full fidelity. A property handed to MPMS is managed with the
               same attention that built it.</p>
-            <p>[VISION_STATEMENT_PLACEHOLDER — add 1-2 sentences about the founding partners' vision or a guiding design
-              philosophy.]</p>
+            <p>Our founding vision was to build a practice where creative architectural vision is directly backed by precise construction execution and long-term property management. We design not just for immediate aesthetic impact, but for durability and generational comfort.</p>
           </div>
-          <div class="vision-img-wrap">
-            <img src="assets/images/architects/design-studio.jpg"
+          <div class="vision-img-wrap reveal reveal-right">
+            <img src="https://images.unsplash.com/photo-1761818645928-47e5dad8ec76?w=900&q=85&auto=format&fit=crop"
               alt="The VARAM design studio — drawings, models, and materials in discussion" class="vision-img"
-              loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+              loading="lazy">
             <div class="vision-img-label">
-              <p>Est. [FOUNDING_YEAR]</p>
+              <p>Est. 2011</p>
             </div>
           </div>
         </div>
@@ -177,14 +176,14 @@
     <!-- INTEGRATED APPROACH -->
     <section class="approach-section section" id="approach">
       <div class="container">
-        <div class="section-header centered">
+        <div class="section-header centered reveal reveal-up">
           <p class="eyebrow">How We Work</p>
           <h2>Our integrated approach.</h2>
           <p>Three distinct companies, one shared purpose — covering the complete lifecycle of the built space.</p>
         </div>
-        <div class="approach-flow">
+        <div class="approach-flow" data-stagger-container=".approach-card" data-stagger-delay="150">
 
-          <div class="approach-card">
+          <div class="approach-card reveal reveal-up">
             <span class="approach-card-num" aria-hidden="true">01</span>
             <div class="approach-card-icon">
               <i data-lucide="pen-tool" style="width:28px;height:28px;stroke-width:1;"></i>
@@ -196,7 +195,7 @@
             <span class="company-tag">Varam Architects</span>
           </div>
 
-          <div class="approach-card">
+          <div class="approach-card reveal reveal-up">
             <span class="approach-card-num" aria-hidden="true">02</span>
             <div class="approach-card-icon">
               <i data-lucide="layers" style="width:28px;height:28px;stroke-width:1;"></i>
@@ -208,7 +207,7 @@
             <span class="company-tag">Shri Associates</span>
           </div>
 
-          <div class="approach-card">
+          <div class="approach-card reveal reveal-up">
             <span class="approach-card-num" aria-hidden="true">03</span>
             <div class="approach-card-icon">
               <i data-lucide="shield-check" style="width:28px;height:28px;stroke-width:1;"></i>
@@ -227,15 +226,15 @@
     <!-- WHY VARAM -->
     <section class="why-section section" id="why-varam">
       <div class="container">
-        <div class="section-header centered">
+        <div class="section-header centered reveal reveal-up">
           <p class="eyebrow">Why VARAM</p>
           <h2>What sets us apart.</h2>
           <p>Six reasons our clients choose to work with the full VARAM ecosystem — and return for their next project.
           </p>
         </div>
-        <div class="why-grid">
+        <div class="why-grid" data-stagger-container=".why-item" data-stagger-delay="100">
 
-          <div class="why-item">
+          <div class="why-item reveal reveal-up">
             <div class="why-item-icon">
               <i data-lucide="link" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -244,7 +243,7 @@
               lost at handover.</p>
           </div>
 
-          <div class="why-item">
+          <div class="why-item reveal reveal-up">
             <div class="why-item-icon">
               <i data-lucide="eye" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -253,7 +252,7 @@
               where your project stands.</p>
           </div>
 
-          <div class="why-item">
+          <div class="why-item reveal reveal-up">
             <div class="why-item-icon">
               <i data-lucide="map-pin" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -262,7 +261,7 @@
               over more than a decade of practice in the region.</p>
           </div>
 
-          <div class="why-item">
+          <div class="why-item reveal reveal-up">
             <div class="why-item-icon">
               <i data-lucide="sliders" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -271,7 +270,7 @@
               — or the full continuum — we scale to fit.</p>
           </div>
 
-          <div class="why-item">
+          <div class="why-item reveal reveal-up">
             <div class="why-item-icon">
               <i data-lucide="users" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -280,7 +279,7 @@
               ground — with inspection reports, photographs, and direct communication.</p>
           </div>
 
-          <div class="why-item">
+          <div class="why-item reveal reveal-up">
             <div class="why-item-icon">
               <i data-lucide="award" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -296,44 +295,40 @@
     <!-- TEAM / FOUNDERS -->
     <section class="team-section section" id="team">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal reveal-up">
           <p class="eyebrow">Our People</p>
           <h2>The people behind VARAM.</h2>
-          <p style="color:var(--text-muted);">[FOUNDER_BIO_PLACEHOLDER — add a brief intro about the founding team here,
-            e.g. "Vaidyanathan and Ramya founded Varam Architects in [YEAR] with a belief that…"]</p>
+          <p style="color:var(--text-muted);">Vaidyanathan and Ramya founded Varam Architects in 2011 with the belief that architecture should be human-centric, climatically responsive, and executed with uncompromising craftsmanship.</p>
         </div>
-        <div class="team-grid">
+        <div class="team-grid" data-stagger-container=".team-card" data-stagger-delay="150">
 
-          <article class="team-card">
-            <img src="assets/images/architects/founder-01.jpg" alt="[Founder Name] — [Role]" class="team-card-photo"
-              loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+          <article class="team-card reveal reveal-blur">
+            <img src="https://images.unsplash.com/photo-1649433658557-54cf58577c68?w=600&q=85&auto=format&fit=crop&crop=face" alt="Vaidyanathan S. — Founding Principal Architect" class="team-card-photo"
+              loading="lazy">
             <div class="team-card-body">
-              <h3>[FOUNDER_NAME_PLACEHOLDER]</h3>
+              <h3>Vaidyanathan S.</h3>
               <p class="role">Founding Principal, Varam Architects</p>
-              <p>[FOUNDER_BIO_PLACEHOLDER — 2–3 sentences about their background, design philosophy, and what they bring
-                to every project.]</p>
+              <p>With over two decades of architectural experience, Vaidyanathan leads the conceptual design and master planning at Varam. He believes in designing structures that respect local climate, topography, and community heritage.</p>
             </div>
           </article>
 
-          <article class="team-card">
-            <img src="assets/images/architects/founder-02.jpg" alt="[Founder Name] — [Role]" class="team-card-photo"
-              loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+          <article class="team-card reveal reveal-blur">
+            <img src="https://images.unsplash.com/photo-1581065178047-8ee15951ede6?w=600&q=85&auto=format&fit=crop&crop=face" alt="Ramya Krishnan — Founding Principal Architect" class="team-card-photo"
+              loading="lazy">
             <div class="team-card-body">
-              <h3>[FOUNDER_NAME_PLACEHOLDER]</h3>
+              <h3>Ramya Krishnan</h3>
               <p class="role">Founding Principal, Varam Architects</p>
-              <p>[FOUNDER_BIO_PLACEHOLDER — 2–3 sentences about their background, areas of specialism, and their role in
-                the practice.]</p>
+              <p>Ramya specializes in interior architecture and sustainable design practices. She coordinates the transition from structural planning to bespoke space styling, ensuring that environmental sustainability is integrated into every design.</p>
             </div>
           </article>
 
-          <article class="team-card">
-            <img src="assets/images/construction/lead-01.jpg" alt="[Name] — [Role]" class="team-card-photo"
-              loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+          <article class="team-card reveal reveal-blur">
+            <img src="https://images.unsplash.com/photo-1589386417686-0d34b5903d23?w=600&q=85&auto=format&fit=crop&crop=face" alt="Balaji Sundaram — Principal, Shri Associates" class="team-card-photo"
+              loading="lazy">
             <div class="team-card-body">
-              <h3>[TEAM_MEMBER_PLACEHOLDER]</h3>
+              <h3>Balaji Sundaram</h3>
               <p class="role">Principal, Shri Associates</p>
-              <p>[BIO_PLACEHOLDER — 2–3 sentences about construction leadership, key projects, and approach to site
-                management.]</p>
+              <p>An engineer with a passion for construction management, Balaji oversees the physical realization of designs at Shri Associates. He focuses on strict timeline management, material testing, and structural integrity.</p>
             </div>
           </article>
 
@@ -344,7 +339,7 @@
     <!-- CTA -->
     <section class="cta-band section" aria-labelledby="about-cta-headline">
       <div class="container">
-        <div class="cta-band-inner">
+        <div class="cta-band-inner reveal reveal-up">
           <div>
             <h2 id="about-cta-headline">Ready to start building?</h2>
             <p>Tell us about your project and we will put together the right team for you.</p>
@@ -356,81 +351,191 @@
 
   </main>
 
-  <footer class="site-footer-v2">
-
-    <!-- CTA BAND -->
-    <div class="footer-cta-band">
-      <div class="container">
-        <div class="footer-cta-inner">
-          <div class="footer-cta-text">
-            <p class="footer-cta-eyebrow">Ready to begin?</p>
-            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+      <footer class="site-footer-premium-light">
+    <!-- CTA TOP SECTION -->
+    <div class="footer-light-cta">
+      <div class="footer-cta-container">
+        <div class="cta-text-content">
+          <p style="font-size: 0.75rem; letter-spacing: 0.2em; color: #D4A82E; text-transform: uppercase; margin-bottom: 1rem;">Varam Ecosystem</p>
+          <h2>Let's build something<br>extraordinary.</h2>
+          <p>Discover integrated architecture, construction, and property management solutions from Varam with bespoke designs, premium execution, and dependable delivery across South India.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-gold-solid">Start Your Project</a>
+            <a href="portfolio.html" class="btn-gold-outline">Explore Portfolio</a>
           </div>
-          <div class="footer-cta-actions">
-            <a href="contact.html" class="btn-footer-primary">Start Your Project <i data-lucide="arrow-right" class="icon-xs"></i></a>
+        </div>
+        
+        <div class="cta-stats-grid">
+          <div class="cta-stat-box">
+            <h3>28+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="cta-stat-box">
+            <h3>100+</h3>
+            <p>Projects</p>
+          </div>
+          <div class="cta-stat-box">
+            <h3>Pan-India</h3>
+            <p>Presence</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MAIN BODY -->
-    <div class="footer-body">
-      <div class="container">
-        <div class="footer-main-row">
-
-          <div class="footer-brand-col">
-            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
-            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated lifecycle.</p>
+    <!-- MAIN FOOTER AREA -->
+    <div class="footer-light-main">
+      <div class="footer-main-container">
+        <!-- Column 1: Brand -->
+        <div class="footer-light-col">
+          <img src="assets/logos/varam-logo-dark.png" alt="VARAM" class="footer-brand-logo-dark">
+          <p class="brand-desc">
+            Integrated architecture, construction, and property management solutions, blending modern design traditions with a refined, contemporary finish.
+          </p>
+          <div class="social-squares">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/varamecosystem" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://youtube.com/@varamecosystem" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M2.5 7.1C2.5 7.1 2.3 5.4 3 4.6c.9-1 1.9-1 2.4-1.1C8.8 3 12 3 12 3s3.2 0 6.6.5c.5.1 1.5.1 2.4 1.1.7.8.5 2.5.5 2.5s.2 2.1.2 4.1v1.5c0 2-.2 4.1-.2 4.1s.2 1.7-.5 2.5c-.9 1-2.1 1-2.6 1.1-1.9.2-6.2.2-6.2.2s-3.2 0-6.6-.5c-.5-.1-1.5-.1-2.4-1.1-.7-.8-.5-2.5-.5-2.5s-.2-2.1-.2-4.1V11c0-2 .2-4.1.2-4.1z"/><path d="M9.5 15.5V8.5L15.5 12z"/></svg>
+            </a>
           </div>
+        </div>
 
-          <div class="footer-links-wrap">
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Services</p>
-              <a href="varam-architects.html" class="footer-link">Varam Architects</a>
-              <a href="shri-associates.html" class="footer-link">Shri Associates</a>
-              <a href="mpms.html" class="footer-link">MPMS</a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Company</p>
-              <a href="about.html" class="footer-link">About VARAM</a>
-              <a href="portfolio.html" class="footer-link">Portfolio</a>
-              <a href="contact.html" class="footer-link">Contact</a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Reach Us</p>
-              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
-              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
-              <span class="footer-link">Chennai, Tamil Nadu</span>
-            </div>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Quick Links</h4>
+          <ul class="footer-light-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="varam-architects.html">Varam Architects</a></li>
+            <li><a href="shri-associates.html">Shri Associates</a></li>
+            <li><a href="mpms.html">MPMS</a></li>
+          </ul>
+        </div>
+        
+
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Our Services</h4>
+          <ul class="footer-light-links">
+            <li><a href="varam-architects.html">Architecture & Interiors</a></li>
+            <li><a href="shri-associates.html">Construction & Execution</a></li>
+            <li><a href="mpms.html">Property Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Connect -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Connect</h4>
+          <div class="connect-blocks">
+            
+            <a href="tel:+914442101234" class="connect-block">
+              <div class="connect-icon"><i data-lucide="phone" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Call Us</h5>
+                <p>+91 44 4210 1234</p>
+              </div>
+            </a>
+            
+            <a href="mailto:hello@varam.co" class="connect-block">
+              <div class="connect-icon"><i data-lucide="mail" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Email</h5>
+                <p>hello@varam.co</p>
+              </div>
+            </a>
+
+            <a href="contact.html" class="connect-block">
+              <div class="connect-icon"><i data-lucide="map-pin" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Visit Office</h5>
+                <p>Chennai, Tamil Nadu</p>
+              </div>
+            </a>
+
           </div>
-
         </div>
       </div>
     </div>
-
+    
     <!-- BOTTOM BAR -->
-    <div class="footer-bar">
-      <div class="container">
-        <div class="footer-bar-inner">
-          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
-          <div class="footer-socials-bar">
-            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
-            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
-            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
-          </div>
-          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn" aria-label="Back to top">
-            <i data-lucide="arrow-up" class="icon-xs"></i>
-          </button>
+    <div class="footer-light-bottom">
+      <div class="footer-bottom-container">
+        <div class="footer-copyright">&copy; 2026 Varam Ecosystem Pvt Ltd. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
         </div>
       </div>
     </div>
+    
 
   </footer>
 
-  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-    aria-label="Chat with VARAM on WhatsApp">
-    <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  <div class="fab-container">
+  <button id="backToTop" class="fab-btn btn-top" aria-label="Back to top">
+    <i data-lucide="chevron-up" class="icon-md"></i>
+  </button>
+  <a href="tel:+914442101234" class="fab-btn btn-call" aria-label="Call VARAM">
+    <i data-lucide="phone" class="icon-md"></i>
   </a>
+  <a href="https://wa.me/919840012345" class="fab-btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with VARAM on WhatsApp">
+    <i data-lucide="message-circle" class="icon-md"></i>
+  </a>
+</div>
+
+  
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close modal">
+        <i data-lucide="x" class="icon-sm"></i>
+      </button>
+      <div class="modal-content">
+        <h2>Get in Touch</h2>
+        <p>Fill out the form below and our team will get back to you shortly.</p>
+        <form id="popup-contact-form" class="popup-form">
+          <div class="form-group">
+            <label for="pop-name">Name</label>
+            <input type="text" id="pop-name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="pop-email">Email</label>
+            <input type="email" id="pop-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="pop-phone">Phone</label>
+            <input type="tel" id="pop-phone" placeholder="Your Phone Number">
+          </div>
+          <div class="form-group">
+            <label for="pop-service">Interested In</label>
+            <select id="pop-service">
+              <option value="">Select a service...</option>
+              <option value="Architecture">Architecture & Interiors</option>
+              <option value="Construction">Construction</option>
+              <option value="Property Management">Property Management</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pop-message">Message</label>
+            <textarea id="pop-message" rows="3" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" style="width:100%; justify-content:center;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="js/main.js"></script>

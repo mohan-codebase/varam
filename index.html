@@ -56,14 +56,32 @@
   <nav id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
-        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+        <img src="assets/logos/varam-logo-yellow.png" alt="VARAM">
       </a>
       <div class="nav-links">
-        <a href="#main-content" class="nav-link">Home</a>
-        <a href="#about-varam" class="nav-link">About VARAM</a>
-        <a href="#companies" class="nav-link">Services</a>
-        <a href="#featured-projects" class="nav-link">Portfolio</a>
-        <a href="#footer-cta" class="nav-link">Contact / Enquiry</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About VARAM</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Services <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="varam-architects.html" class="nav-dropdown-item">Varam Architects</a>
+              <a href="shri-associates.html" class="nav-dropdown-item">Shri Associates</a>
+              <a href="mpms.html" class="nav-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio <i data-lucide="chevron-down" class="nav-dropdown-icon icon-sm"></i></a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown-content">
+              <a href="portfolio.html#architecture" class="nav-dropdown-item">Architecture Projects</a>
+              <a href="portfolio.html#construction" class="nav-dropdown-item">Construction Projects</a>
+              <a href="portfolio.html#renovation" class="nav-dropdown-item">Renovation Projects</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="nav-link">Contact / Enquiry</a>
       </div>
       <div class="nav-actions">
         <a href="#footer-cta" class="btn btn-primary nav-cta">Get in Touch</a>
@@ -79,17 +97,31 @@
     <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
     <div class="drawer-panel">
       <div class="drawer-header">
-        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="drawer-logo">
+        <img src="assets/logos/varam-logo-yellow.png" alt="VARAM" class="drawer-logo">
         <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
           <i data-lucide="x" class="icon-sm"></i>
         </button>
       </div>
       <nav class="drawer-nav" aria-label="Mobile navigation">
-        <a href="#main-content" class="drawer-link drawer-close-link">Home</a>
-        <a href="#about-varam" class="drawer-link drawer-close-link">About VARAM</a>
-        <a href="#companies" class="drawer-link drawer-close-link">Services</a>
-        <a href="#featured-projects" class="drawer-link drawer-close-link">Portfolio</a>
-        <a href="#footer-cta" class="drawer-link drawer-close-link">Contact / Enquiry</a>
+        <a href="index.html" class="drawer-link">Home</a>
+        <a href="about.html" class="drawer-link">About VARAM</a>
+        <div class="drawer-item">
+          <button class="drawer-link">Services <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="varam-architects.html" class="drawer-dropdown-item">Varam Architects</a>
+            <a href="shri-associates.html" class="drawer-dropdown-item">Shri Associates</a>
+            <a href="mpms.html" class="drawer-dropdown-item">MPMS — Meenakshi Property Management Services</a>
+          </div>
+        </div>
+        <div class="drawer-item">
+          <button class="drawer-link">Portfolio <i data-lucide="chevron-down" class="drawer-dropdown-icon icon-sm"></i></button>
+          <div class="drawer-dropdown">
+            <a href="portfolio.html#architecture" class="drawer-dropdown-item">Architecture Projects</a>
+            <a href="portfolio.html#construction" class="drawer-dropdown-item">Construction Projects</a>
+            <a href="portfolio.html#renovation" class="drawer-dropdown-item">Renovation Projects</a>
+          </div>
+        </div>
+        <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
       </nav>
       <div class="drawer-cta">
         <a href="#footer-cta" class="btn btn-primary btn-full drawer-close-link">Start Your Project</a>
@@ -111,7 +143,8 @@
     <section class="hero-home" aria-label="Welcome to VARAM">
       <div class="hero-slides">
         <!-- SLIDE 1 -->
-        <div class="hero-slide hero-slide-1">
+        <div class="hero-slide">
+          <div class="hero-slide-bg hero-slide-1"></div>
           <div class="hero-overlay" aria-hidden="true"></div>
           <div class="hero-content container">
             <p class="hero-eyebrow">Design · Build · Manage</p>
@@ -129,7 +162,8 @@
         </div>
 
         <!-- SLIDE 2 -->
-        <div class="hero-slide hero-slide-2">
+        <div class="hero-slide">
+          <div class="hero-slide-bg hero-slide-2"></div>
           <div class="hero-overlay" aria-hidden="true"></div>
           <div class="hero-content container">
             <p class="hero-eyebrow">Architecture & Construction</p>
@@ -146,7 +180,8 @@
         </div>
 
         <!-- SLIDE 3 -->
-        <div class="hero-slide hero-slide-3">
+        <div class="hero-slide">
+          <div class="hero-slide-bg hero-slide-3"></div>
           <div class="hero-overlay" aria-hidden="true"></div>
           <div class="hero-content container">
             <p class="hero-eyebrow">Property Management</p>
@@ -164,11 +199,17 @@
       </div>
 
       <div class="hero-dots" aria-label="Slide navigation" role="tablist">
-        <button class="hero-dot" role="tab" aria-label="Slide 1: Architecture"></button>
-        <button class="hero-dot" role="tab" aria-label="Slide 2: Construction"></button>
-        <button class="hero-dot" role="tab" aria-label="Slide 3: Property Management"></button>
+        <button class="hero-dot" role="tab" aria-label="Slide 1: Architecture"><span class="dot-progress"></span></button>
+        <button class="hero-dot" role="tab" aria-label="Slide 2: Construction"><span class="dot-progress"></span></button>
+        <button class="hero-dot" role="tab" aria-label="Slide 3: Property Management"><span class="dot-progress"></span></button>
       </div>
-      <p class="hero-scroll-cue" aria-hidden="true">Scroll</p>
+
+      <div class="hero-scroll-cue" aria-hidden="true">
+        <span class="scroll-mouse-wheel">
+          <span class="scroll-wheel-dot"></span>
+        </span>
+        <span class="scroll-cue-text">Scroll</span>
+      </div>
     </section>
 
     <!-- TRUST MARQUEE STRIP -->
@@ -212,18 +253,18 @@
       <div class="container">
         <div class="about-home-inner">
 
-          <div class="about-home-visual">
+          <div class="about-home-visual reveal reveal-left">
             <div class="about-img-stack">
               <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=85&auto=format&fit=crop"
                 alt="VARAM team reviewing architectural drawings on site" class="about-home-img" loading="lazy">
               <div class="about-img-badge">
-                <span class="about-badge-num">15+</span>
+                <span class="about-badge-num"><span class="stat-number" data-target="15">0</span>+</span>
                 <span class="about-badge-label">Years of craft</span>
               </div>
             </div>
           </div>
 
-          <div class="about-home-text">
+          <div class="about-home-text reveal reveal-blur">
             <p class="eyebrow">About VARAM</p>
             <h2>Built environment, reimagined as a continuum.</h2>
             <div class="divider"></div>
@@ -233,13 +274,13 @@
               to look after a property you cannot always visit — VARAM has the expertise to make it happen right.</p>
             <div class="about-mini-stats">
               <div class="about-mini-stat">
-                <strong>80+</strong><span>Projects</span>
+                <strong><span class="stat-number" data-target="80">0</span>+</strong><span>Projects</span>
               </div>
               <div class="about-mini-stat">
-                <strong>200+</strong><span>Clients</span>
+                <strong><span class="stat-number" data-target="200">0</span>+</strong><span>Clients</span>
               </div>
               <div class="about-mini-stat">
-                <strong>3</strong><span>Verticals</span>
+                <strong><span class="stat-number" data-target="3">0</span></strong><span>Verticals</span>
               </div>
             </div>
             <a href="#our-process" class="btn btn-secondary">Learn How We Work</a>
@@ -252,16 +293,17 @@
 
 
     <!-- HOW WE WORK — PROCESS -->
-    <section class="process-section section" id="our-process">
+    <section class="process-section section radial-glow-container" id="our-process">
+      <div class="radial-glow-element glow-top-left" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-header centered">
+        <div class="section-header centered reveal reveal-up">
           <p class="eyebrow">How We Work</p>
           <h2>From vision to handover — and beyond.</h2>
           <p>A seamless four-phase journey that brings your project to life with full transparency at every step.</p>
         </div>
-        <div class="process-steps-v2">
+        <div class="process-steps-v2" data-stagger-container=".process-step-v2" data-stagger-delay="120">
 
-          <div class="process-step-v2">
+          <div class="process-step-v2 reveal reveal-up">
             <span class="psv2-num">01</span>
             <div class="psv2-icon"><i data-lucide="search" class="icon-md"></i></div>
             <h4>Discover &amp; Brief</h4>
@@ -269,7 +311,7 @@
               project brief.</p>
           </div>
 
-          <div class="process-step-v2">
+          <div class="process-step-v2 reveal reveal-up">
             <span class="psv2-num">02</span>
             <div class="psv2-icon"><i data-lucide="pen-tool" class="icon-md"></i></div>
             <h4>Design &amp; Plan</h4>
@@ -277,7 +319,7 @@
               climate.</p>
           </div>
 
-          <div class="process-step-v2">
+          <div class="process-step-v2 reveal reveal-up">
             <span class="psv2-num">03</span>
             <div class="psv2-icon"><i data-lucide="hard-hat" class="icon-md"></i></div>
             <h4>Build &amp; Execute</h4>
@@ -285,7 +327,7 @@
               supervision at every stage.</p>
           </div>
 
-          <div class="process-step-v2">
+          <div class="process-step-v2 reveal reveal-up">
             <span class="psv2-num">04</span>
             <div class="psv2-icon"><i data-lucide="shield-check" class="icon-md"></i></div>
             <h4>Manage &amp; Protect</h4>
@@ -300,16 +342,16 @@
     <!-- THREE VERTICALS -->
     <section class="verticals-home section" id="companies">
       <div class="container">
-        <div class="section-header centered">
+        <div class="section-header centered reveal reveal-up">
           <p class="eyebrow">What We Do</p>
           <h2>Three companies. One lifecycle.</h2>
           <p>Each vertical is a specialist in its own right — together they cover every phase of the built environment.
           </p>
         </div>
-        <div class="verticals-grid-v2">
+        <div class="verticals-grid-v2" data-stagger-container=".vertical-card-v2" data-stagger-delay="150">
 
-          <article class="vertical-card-v2">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=85&auto=format&fit=crop"
+          <article class="vertical-card-v2 reveal reveal-blur">
+            <img src="assets/images/varam_architects_card.png"
               alt="Varam Architects — architectural design" class="vcv2-bg" loading="lazy">
             <div class="vcv2-overlay"></div>
             <div class="vcv2-content">
@@ -318,13 +360,13 @@
               <h3>Varam Architects</h3>
               <p class="vcv2-desc">Thoughtful design rooted in context, responsive to climate, built to endure.</p>
               <span class="arrow-link arrow-link-white">
-                Our practice <i data-lucide="arrow-right" class="icon-xs"></i>
+                 Our practice <i data-lucide="arrow-right" class="icon-xs"></i>
               </span>
             </div>
           </article>
 
-          <article class="vertical-card-v2">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85&auto=format&fit=crop"
+          <article class="vertical-card-v2 reveal reveal-blur">
+            <img src="assets/images/shri_associates_card.png"
               alt="Shri Associates — construction" class="vcv2-bg" loading="lazy">
             <div class="vcv2-overlay"></div>
             <div class="vcv2-content">
@@ -339,8 +381,8 @@
             </div>
           </article>
 
-          <article class="vertical-card-v2">
-            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=85&auto=format&fit=crop"
+          <article class="vertical-card-v2 reveal reveal-blur">
+            <img src="assets/images/mpms_management_card.png"
               alt="MPMS — property management" class="vcv2-bg" loading="lazy">
             <div class="vcv2-overlay"></div>
             <div class="vcv2-content">
@@ -364,7 +406,7 @@
       <div class="container">
         <div class="why-varam-grid">
 
-          <div class="why-varam-visual">
+          <div class="why-varam-visual reveal reveal-left">
             <div class="why-varam-img-wrap">
               <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=85&auto=format&fit=crop"
                 alt="VARAM architect working on design" loading="lazy">
@@ -375,12 +417,12 @@
             </div>
           </div>
 
-          <div>
+          <div class="reveal reveal-up">
             <p class="eyebrow">Why Choose VARAM</p>
             <h2 class="why-varam-heading">One partner. Every phase. Zero compromise.</h2>
-            <div class="why-varam-features">
+            <div class="why-varam-features" data-stagger-container=".why-feature" data-stagger-delay="100">
 
-              <div class="why-feature">
+              <div class="why-feature reveal reveal-up">
                 <div class="why-feature-icon">
                   <i data-lucide="layers" class="icon-md"></i>
                 </div>
@@ -391,7 +433,7 @@
                 </div>
               </div>
 
-              <div class="why-feature">
+              <div class="why-feature reveal reveal-up">
                 <div class="why-feature-icon">
                   <i data-lucide="globe" class="icon-md"></i>
                 </div>
@@ -402,7 +444,7 @@
                 </div>
               </div>
 
-              <div class="why-feature">
+              <div class="why-feature reveal reveal-up">
                 <div class="why-feature-icon">
                   <i data-lucide="leaf" class="icon-md"></i>
                 </div>
@@ -413,7 +455,7 @@
                 </div>
               </div>
 
-              <div class="why-feature">
+              <div class="why-feature reveal reveal-up">
                 <div class="why-feature-icon">
                   <i data-lucide="clock" class="icon-md"></i>
                 </div>
@@ -431,117 +473,148 @@
       </div>
     </section>
 
-    <!-- NRI SECTION -->
-    <section class="nri-section section" id="nri-owners">
-      <div class="container">
-        <div class="nri-grid">
-
-          <div class="nri-visual">
-            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=85&auto=format&fit=crop"
-              alt="Modern home managed by MPMS for NRI owners" loading="lazy">
-            <div class="nri-stat-badge">
-              <span class="nri-stat-num">14+</span>
-              <span class="nri-stat-label">Countries. One trusted team.</span>
-            </div>
-          </div>
-
-          <div class="nri-text">
-            <p class="eyebrow-yellow">For NRI Property Owners</p>
-            <h2>Your Chennai property — managed like it's our own.</h2>
-            <p>Whether you're in Singapore, the US, or the UK — MPMS gives you a trusted local presence so your
-              investment is protected, maintained, and always accounted for.</p>
-            <ul class="nri-list">
-              <li><i data-lucide="check-circle" class="icon-xs"></i> Dedicated property manager, single point of contact
-              </li>
-              <li><i data-lucide="check-circle" class="icon-xs"></i> Monthly photo, video &amp; financial reports</li>
-              <li><i data-lucide="check-circle" class="icon-xs"></i> Preventive maintenance &amp; emergency response
-              </li>
-              <li><i data-lucide="check-circle" class="icon-xs"></i> Rental management &amp; tenant vetting</li>
-              <li><i data-lucide="check-circle" class="icon-xs"></i> Available across time zones</li>
-            </ul>
-            <a href="#companies" class="btn btn-primary">Explore MPMS Services</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- FEATURED PROJECTS -->
     <section class="projects-home section section-tint" id="featured-projects">
       <div class="container">
-        <div class="projects-header-v2">
+        <div class="projects-header-v2 reveal reveal-up">
           <div>
             <p class="eyebrow">Selected Work</p>
             <h2>Projects we are proud of.</h2>
           </div>
-          <a href="#spotlight" class="btn btn-secondary">View Signature Project</a>
+          <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
         </div>
 
-        <div class="projects-grid-v2">
+        <!-- Category Filter Bar -->
+        <div class="home-filter-bar reveal reveal-up" role="group" aria-label="Filter projects by category">
+          <button class="home-filter-btn active" data-filter="all">All Projects</button>
+          <button class="home-filter-btn" data-filter="Architecture">Architecture</button>
+          <button class="home-filter-btn" data-filter="Construction">Construction</button>
+          <button class="home-filter-btn" data-filter="Renovation">Renovation</button>
+        </div>
 
-          <article class="project-featured-v2">
-            <a href="#spotlight" class="project-card" aria-label="Serene Residences, Adyar — view in portfolio">
-              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=85&auto=format&fit=crop"
-                alt="Serene Residences, Adyar" class="project-card-img" loading="lazy">
-              <div class="project-card-body">
-                <span class="tag">Architecture</span>
-                <h3>Serene Residences, Adyar</h3>
-                <p class="project-card-desc">A courtyard residence designed for natural light and ventilation, rooted in
-                  Chennai's tropical climate.</p>
-                <span class="arrow-link arrow-link-white">View project <i data-lucide="arrow-right"
-                    class="icon-xs"></i></span>
+        <!-- Showcase Grid -->
+        <div class="home-projects-grid" data-stagger-container=".home-project-card" data-stagger-delay="100">
+
+          <!-- Project 01: Serene Residences, Adyar (Architecture) -->
+          <article class="home-project-card reveal reveal-up fade-in" data-category="Architecture" data-project="p01">
+            <span class="hpc-tag">Architecture</span>
+            <div class="hpc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1642667670006-6b3059ccf96d?w=900&q=85&auto=format&fit=crop"
+                alt="Serene Residences, Adyar" class="hpc-img" loading="lazy">
+            </div>
+            <div class="hpc-overlay"></div>
+            <div class="hpc-content">
+              <h3>Serene Residences, Adyar</h3>
+              <div class="hpc-meta">
+                <span class="hpc-meta-item"><i data-lucide="map-pin" class="icon-xs"></i> Adyar, Chennai</span>
+                <span class="hpc-meta-item"><i data-lucide="ruler" class="icon-xs"></i> 4,500 Sq Ft</span>
+                <span class="hpc-meta-item"><i data-lucide="calendar" class="icon-xs"></i> 2024</span>
               </div>
-            </a>
+              <p class="hpc-desc">A courtyard residence designed for natural light and ventilation, featuring exposed concrete and local stone.</p>
+              <span class="hpc-link">View Details <i data-lucide="arrow-right" class="icon-xs"></i></span>
+            </div>
           </article>
 
-          <div class="projects-stack-v2">
-            <article>
-              <a href="#spotlight" class="project-card" aria-label="Greenfield Villas, ECR — view in portfolio">
-                <img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?w=800&q=85&auto=format&fit=crop"
-                  alt="Greenfield Villas, ECR" class="project-card-img" loading="lazy">
-                <div class="project-card-body">
-                  <span class="tag">Construction</span>
-                  <h3>Greenfield Villas, ECR</h3>
-                  <span class="arrow-link arrow-link-white">View project <i data-lucide="arrow-right"
-                      class="icon-xs"></i></span>
-                </div>
-              </a>
-            </article>
-            <article>
-              <a href="#spotlight" class="project-card" aria-label="Heritage Townhouse, Mylapore — view in portfolio">
-                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=85&auto=format&fit=crop"
-                  alt="Heritage Townhouse, Mylapore" class="project-card-img" loading="lazy">
-                <div class="project-card-body">
-                  <span class="tag">Renovation</span>
-                  <h3>Heritage Townhouse, Mylapore</h3>
-                  <span class="arrow-link arrow-link-white">View project <i data-lucide="arrow-right"
-                      class="icon-xs"></i></span>
-                </div>
-              </a>
-            </article>
-          </div>
+          <!-- Project 02: The Prism Office, Nungambakkam (Architecture) -->
+          <article class="home-project-card reveal reveal-up fade-in" data-category="Architecture" data-project="p02">
+            <span class="hpc-tag">Architecture</span>
+            <div class="hpc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1643602475901-9f67ab7d8196?w=900&q=85&auto=format&fit=crop"
+                alt="The Prism Office, Nungambakkam" class="hpc-img" loading="lazy">
+            </div>
+            <div class="hpc-overlay"></div>
+            <div class="hpc-content">
+              <h3>The Prism Office, Nungambakkam</h3>
+              <div class="hpc-meta">
+                <span class="hpc-meta-item"><i data-lucide="map-pin" class="icon-xs"></i> Nungambakkam, Chennai</span>
+                <span class="hpc-meta-item"><i data-lucide="ruler" class="icon-xs"></i> 12,000 Sq Ft</span>
+                <span class="hpc-meta-item"><i data-lucide="calendar" class="icon-xs"></i> 2023</span>
+              </div>
+              <p class="hpc-desc">A commercial workspace with a custom facade designed to control solar gain while providing open street views.</p>
+              <span class="hpc-link">View Details <i data-lucide="arrow-right" class="icon-xs"></i></span>
+            </div>
+          </article>
 
-        </div>
-      </div>
-    </section>
+          <!-- Project 03: Greenfield Villas, East Coast Road (Construction) -->
+          <article class="home-project-card reveal reveal-up fade-in" data-category="Construction" data-project="p03">
+            <span class="hpc-tag">Construction</span>
+            <div class="hpc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1607567618395-62fc2d132c3e?w=900&q=85&auto=format&fit=crop"
+                alt="Greenfield Villas, ECR" class="hpc-img" loading="lazy">
+            </div>
+            <div class="hpc-overlay"></div>
+            <div class="hpc-content">
+              <h3>Greenfield Villas, East Coast Road</h3>
+              <div class="hpc-meta">
+                <span class="hpc-meta-item"><i data-lucide="map-pin" class="icon-xs"></i> ECR, Chennai</span>
+                <span class="hpc-meta-item"><i data-lucide="ruler" class="icon-xs"></i> 6 Luxury Villas</span>
+                <span class="hpc-meta-item"><i data-lucide="calendar" class="icon-xs"></i> 2024</span>
+              </div>
+              <p class="hpc-desc">Turnkey construction of six premium coastal villas, delivering move-in ready design and execution.</p>
+              <span class="hpc-link">View Details <i data-lucide="arrow-right" class="icon-xs"></i></span>
+            </div>
+          </article>
 
-    <!-- PROJECT SPOTLIGHT -->
-    <section class="spotlight-section" id="spotlight" aria-label="Signature project">
-      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=90&auto=format&fit=crop"
-        alt="The Prism Office, Guindy — Varam Architects" class="spotlight-bg" loading="lazy">
-      <div class="spotlight-overlay" aria-hidden="true"></div>
-      <div class="container spotlight-content">
-        <div class="spotlight-text">
-          <p class="eyebrow-yellow">Signature Project</p>
-          <h2>The Prism Office, Guindy</h2>
-          <p>A 12,000 sq ft commercial complex designed for a technology consultancy — where glass meets concrete in a
-            structure that balances openness with focused work.</p>
-          <div class="spotlight-meta">
-            <span><i data-lucide="map-pin" class="icon-xs"></i> Guindy, Chennai</span>
-            <span><i data-lucide="ruler" class="icon-xs"></i> 12,000 sq ft</span>
-            <span><i data-lucide="calendar" class="icon-xs"></i> 2023</span>
-          </div>
-          <a href="#footer-cta" class="btn btn-primary">Start Your Project</a>
+          <!-- Project 04: Heritage Townhouse Restoration, Mylapore (Renovation) -->
+          <article class="home-project-card reveal reveal-up fade-in" data-category="Renovation" data-project="p04">
+            <span class="hpc-tag">Renovation</span>
+            <div class="hpc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1668749543729-9fbd709751ca?w=900&q=85&auto=format&fit=crop"
+                alt="Heritage Townhouse, Mylapore" class="hpc-img" loading="lazy">
+            </div>
+            <div class="hpc-overlay"></div>
+            <div class="hpc-content">
+              <h3>Heritage Townhouse, Mylapore</h3>
+              <div class="hpc-meta">
+                <span class="hpc-meta-item"><i data-lucide="map-pin" class="icon-xs"></i> Mylapore, Chennai</span>
+                <span class="hpc-meta-item"><i data-lucide="ruler" class="icon-xs"></i> Restoration</span>
+                <span class="hpc-meta-item"><i data-lucide="calendar" class="icon-xs"></i> 2022</span>
+              </div>
+              <p class="hpc-desc">Careful restoration of an 80-year-old traditional home, preserving original terrazzo and teak woodwork.</p>
+              <span class="hpc-link">View Details <i data-lucide="arrow-right" class="icon-xs"></i></span>
+            </div>
+          </article>
+
+          <!-- Project 05: Medha School Campus, Tambaram (Architecture) -->
+          <article class="home-project-card reveal reveal-up fade-in" data-category="Architecture" data-project="p05">
+            <span class="hpc-tag">Architecture</span>
+            <div class="hpc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1759562588736-186cce2c26b5?w=900&q=85&auto=format&fit=crop"
+                alt="Medha School Campus, Tambaram" class="hpc-img" loading="lazy">
+            </div>
+            <div class="hpc-overlay"></div>
+            <div class="hpc-content">
+              <h3>Medha School Campus, Tambaram</h3>
+              <div class="hpc-meta">
+                <span class="hpc-meta-item"><i data-lucide="map-pin" class="icon-xs"></i> Tambaram, Chennai</span>
+                <span class="hpc-meta-item"><i data-lucide="ruler" class="icon-xs"></i> 3-Acre Campus</span>
+                <span class="hpc-meta-item"><i data-lucide="calendar" class="icon-xs"></i> 2023</span>
+              </div>
+              <p class="hpc-desc">A nature-centric educational campus designed with shaded outdoor corridors and central gathering lawns.</p>
+              <span class="hpc-link">View Details <i data-lucide="arrow-right" class="icon-xs"></i></span>
+            </div>
+          </article>
+
+          <!-- Project 06: Skyline Apartments, Velachery (Construction/Property Mgmt) -->
+          <article class="home-project-card reveal reveal-up fade-in" data-category="Construction" data-project="p06">
+            <span class="hpc-tag">Property Mgmt</span>
+            <div class="hpc-img-wrap">
+              <img src="https://images.unsplash.com/photo-1639335944967-03b902ead5fd?w=900&q=85&auto=format&fit=crop"
+                alt="Skyline Apartments, Velachery" class="hpc-img" loading="lazy">
+            </div>
+            <div class="hpc-overlay"></div>
+            <div class="hpc-content">
+              <h3>Skyline Apartments, Velachery</h3>
+              <div class="hpc-meta">
+                <span class="hpc-meta-item"><i data-lucide="map-pin" class="icon-xs"></i> Velachery, Chennai</span>
+                <span class="hpc-meta-item"><i data-lucide="ruler" class="icon-xs"></i> 48 Units</span>
+                <span class="hpc-meta-item"><i data-lucide="calendar" class="icon-xs"></i> Managed</span>
+              </div>
+              <p class="hpc-desc">Turnkey maintenance management and structural monitoring, providing complete peace of mind for NRI owners.</p>
+              <span class="hpc-link">View Details <i data-lucide="arrow-right" class="icon-xs"></i></span>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -549,7 +622,7 @@
     <!-- TESTIMONIALS -->
     <section class="testimonials-section section" id="testimonials">
       <div class="container">
-        <div class="testimonials-header-v2">
+        <div class="testimonials-header-v2 reveal reveal-up">
           <div>
             <p class="eyebrow-yellow">Client Stories</p>
             <h2 class="testimonials-heading">What our clients say.</h2>
@@ -567,78 +640,180 @@
           </div>
         </div>
 
-        <div class="testimonials-layout-v2">
+        <!-- Filter tabs -->
+        <div class="testimonials-filters reveal reveal-up" data-stagger-container=".t-filter-btn" data-stagger-delay="50">
+          <button class="t-filter-btn active" data-filter="all">All Stories</button>
+          <button class="t-filter-btn" data-filter="architecture">Varam Architects</button>
+          <button class="t-filter-btn" data-filter="construction">Shri Associates</button>
+          <button class="t-filter-btn" data-filter="management">MPMS</button>
+        </div>
 
-          <!-- Featured large testimonial -->
-          <div class="testimonial-featured-v2">
-            <svg class="tfv2-quote" viewBox="0 0 48 36" fill="none" aria-hidden="true">
-              <path
-                d="M0 36V22.5C0 10.08 7.56 3.12 22.68 0l2.16 3.96C17.04 5.64 12.6 9.48 11.52 15.48H18V36H0zm26 0V22.5C26 10.08 33.56 3.12 48.68 0l2.16 3.96C42.96 5.64 38.52 9.48 37.44 15.48H44V36H26z"
-                fill="currentColor" />
-            </svg>
-            <p class="tfv2-text">The VARAM team transformed our Adyar plot into a home that exceeded every expectation.
-              Their design was thoughtful, the construction was flawless, and they kept us informed at every step — from
-              first sketch to final handover.</p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">RK</div>
-              <div class="testimonial-author-info">
-                <strong>Rajesh Kumar</strong>
-                <span>Homeowner, Adyar, Chennai</span>
+        <!-- Carousel / Slider area -->
+        <div class="testimonials-slider-container reveal reveal-up">
+          <div class="testimonials-carousel">
+            <div class="testimonials-track" id="testimonials-track">
+              
+              <!-- Card 1: Rajesh Kumar (Architecture) -->
+              <div class="testimonial-slide-card" data-category="architecture">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"The VARAM team transformed our Adyar plot into a home that exceeded every expectation. Their design was thoughtful, the construction was flawless, and they kept us informed at every step — from first sketch to final handover."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">RK</div>
+                  <div class="testimonial-author-info">
+                    <strong>Rajesh Kumar</strong>
+                    <span>Homeowner, Adyar, Chennai</span>
+                  </div>
+                </div>
               </div>
+              
+              <!-- Card 2: Priya Sundarajan (Management) -->
+              <div class="testimonial-slide-card" data-category="management">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"Being based in the US, I was nervous about managing my rental properties in Chennai remotely. MPMS gave me complete peace of mind — detailed monthly reports, proactive alerts, and genuine care for my assets."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">PS</div>
+                  <div class="testimonial-author-info">
+                    <strong>Priya Sundarajan</strong>
+                    <span>NRI Property Owner, New Jersey</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3: Arun Mani (Construction) -->
+              <div class="testimonial-slide-card" data-category="construction">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"Shri Associates delivered our commercial complex on time and within budget — rare in Chennai. The quality of finish is exceptional. We've already commissioned our second project on OMR."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">AM</div>
+                  <div class="testimonial-author-info">
+                    <strong>Arun Mani</strong>
+                    <span>Developer, OMR Corridor</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4: Dr. Kavitha Srinivas (Architecture) -->
+              <div class="testimonial-slide-card" data-category="architecture">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"Designing a campus requires balancing active play spaces, quiet learning zones, and strict safety guidelines. Varam Architects listened to our educators, understood our pedagogy, and designed a campus that truly inspires."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">KS</div>
+                  <div class="testimonial-author-info">
+                    <strong>Dr. Kavitha Srinivas</strong>
+                    <span>Principal, Medha School Campus</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5: Vikram Reddy (Construction) -->
+              <div class="testimonial-slide-card" data-category="construction">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"The precision in execution of our office's steel structures and concrete facade was remarkable. Shri Associates read the architectural plan perfectly and did not compromise on a single tolerance."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">VR</div>
+                  <div class="testimonial-author-info">
+                    <strong>Vikram Reddy</strong>
+                    <span>Managing Director, Prism Office</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6: Gopalakrishnan V. (Management) -->
+              <div class="testimonial-slide-card" data-category="management">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"Managing my inherited ancestral home in Mylapore from Singapore was a constant challenge. MPMS took over the maintenance, handled tenant verification, and resolved plumbing repairs in hours."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">GV</div>
+                  <div class="testimonial-author-info">
+                    <strong>Gopalakrishnan V.</strong>
+                    <span>Property Owner, Singapore</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 7: Suresh & Divya (Architecture) -->
+              <div class="testimonial-slide-card" data-category="architecture">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"We wanted a home that would bring our family together while maintaining privacy. Varam Architects designed a layout around a beautiful central courtyard that draws in natural light and ventilation perfectly."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">SD</div>
+                  <div class="testimonial-author-info">
+                    <strong>Suresh & Divya</strong>
+                    <span>Homeowners, ECR, Chennai</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 8: Lakshmi Narayanan (Construction) -->
+              <div class="testimonial-slide-card" data-category="construction">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"From foundation excavation to the final coat of paint, their construction quality was exemplary. We received weekly progress reports with photos, ensuring complete transparency throughout the build."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">LN</div>
+                  <div class="testimonial-author-info">
+                    <strong>Lakshmi Narayanan</strong>
+                    <span>Villa Owner, Tambaram</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 9: Anjali & Rohan (Management) -->
+              <div class="testimonial-slide-card" data-category="management">
+                <div class="testimonial-stars">
+                  <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <p class="testimonial-text">"We tried managing our rentals ourselves but found it exhausting. MPMS handles everything from tenant move-in checklists to structural upkeep. Their automated billing and statements make it a breeze."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">AR</div>
+                  <div class="testimonial-author-info">
+                    <strong>Anjali & Rohan</strong>
+                    <span>Property Investors, Guindy</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Two smaller testimonials -->
-          <div class="testimonials-side-v2">
-
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i data-lucide="star" class="icon-star"></i><i data-lucide="star" class="icon-star"></i><i
-                  data-lucide="star" class="icon-star"></i><i data-lucide="star" class="icon-star"></i><i
-                  data-lucide="star" class="icon-star"></i>
-              </div>
-              <p class="testimonial-text">"Being based in the US, I was nervous about managing a construction project
-                remotely. MPMS gave me complete peace of mind — detailed monthly reports, proactive alerts, and genuine
-                care for my property."</p>
-              <div class="testimonial-author">
-                <div class="testimonial-avatar">PS</div>
-                <div class="testimonial-author-info">
-                  <strong>Priya Sundarajan</strong>
-                  <span>NRI Property Owner, New Jersey</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial-card">
-              <div class="testimonial-stars">
-                <i data-lucide="star" class="icon-star"></i><i data-lucide="star" class="icon-star"></i><i
-                  data-lucide="star" class="icon-star"></i><i data-lucide="star" class="icon-star"></i><i
-                  data-lucide="star" class="icon-star"></i>
-              </div>
-              <p class="testimonial-text">"Shri Associates delivered our commercial complex on time and within budget —
-                rare in Chennai. The quality of finish is exceptional. We've already commissioned our second project."
-              </p>
-              <div class="testimonial-author">
-                <div class="testimonial-avatar">AM</div>
-                <div class="testimonial-author-info">
-                  <strong>Arun Mani</strong>
-                  <span>Developer, OMR Corridor</span>
-                </div>
-              </div>
-            </div>
-
+          <!-- Controls -->
+          <div class="testimonials-controls">
+            <button id="t-prev" class="t-control-btn" aria-label="Previous testimonials page">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            </button>
+            <div class="t-dots" id="t-dots"></div>
+            <button id="t-next" class="t-control-btn" aria-label="Next testimonials page">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
           </div>
+
         </div>
       </div>
     </section>
 
 
     <!-- FAQ -->
-    <section class="faq-section section" id="faq">
+    <section class="faq-section section radial-glow-container" id="faq">
+      <div class="radial-glow-element glow-bottom-right" aria-hidden="true"></div>
       <div class="container">
         <div class="faq-inner">
 
-          <div class="faq-intro">
+          <div class="faq-intro reveal reveal-left">
             <p class="eyebrow">Common Questions</p>
             <h2 class="faq-intro-heading">Everything you need to know.</h2>
             <p>Have a question that isn't here? Our team is always happy to have a conversation — no obligation, no
@@ -646,9 +821,9 @@
             <a href="contact.html" class="btn btn-primary">Speak to Us Directly</a>
           </div>
 
-          <div class="faq-list" id="faq-accordion">
+          <div class="faq-list" id="faq-accordion" data-stagger-container=".faq-item" data-stagger-delay="100">
 
-            <div class="faq-item">
+            <div class="faq-item reveal reveal-up">
               <button class="faq-question" aria-expanded="false">
                 Can I hire Varam Architects without using Shri Associates for construction?
                 <span class="faq-chevron"><i data-lucide="chevron-down" class="icon-xs"></i></span>
@@ -660,7 +835,7 @@
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item reveal reveal-up">
               <button class="faq-question" aria-expanded="false">
                 We are based abroad — how do you manage NRI projects?
                 <span class="faq-chevron"><i data-lucide="chevron-down" class="icon-xs"></i></span>
@@ -672,7 +847,7 @@
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item reveal reveal-up">
               <button class="faq-question" aria-expanded="false">
                 What types of projects do you take on?
                 <span class="faq-chevron"><i data-lucide="chevron-down" class="icon-xs"></i></span>
@@ -684,7 +859,7 @@
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item reveal reveal-up">
               <button class="faq-question" aria-expanded="false">
                 How do you ensure projects stay on schedule and within budget?
                 <span class="faq-chevron"><i data-lucide="chevron-down" class="icon-xs"></i></span>
@@ -696,7 +871,7 @@
               </div>
             </div>
 
-            <div class="faq-item">
+            <div class="faq-item reveal reveal-up">
               <button class="faq-question" aria-expanded="false">
                 What is MPMS, and what does property management include?
                 <span class="faq-chevron"><i data-lucide="chevron-down" class="icon-xs"></i></span>
@@ -713,94 +888,223 @@
       </div>
     </section>
 
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Project detail">
+      <div class="lightbox-backdrop" aria-hidden="true"></div>
+      <div class="lightbox-panel">
+        <div class="lightbox-box">
+          <button id="lightbox-close" class="lightbox-close" aria-label="Close project detail">
+            <i data-lucide="x" style="width:18px;height:18px;"></i>
+          </button>
+          <div class="lightbox-img-wrap">
+            <img id="lightbox-image" src="" alt="" class="lightbox-img">
+          </div>
+          <div class="lightbox-body">
+            <span id="lightbox-category" class="eyebrow lightbox-category"></span>
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-description"></p>
+            <p class="lightbox-scope-label">Scope of Work</p>
+            <ul id="lightbox-scope" role="list"></ul>
+            <div style="margin-top:auto;padding-top:1.5rem;">
+              <a href="contact.html" class="btn btn-primary">Discuss a Similar Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 
-  <footer class="site-footer-v2">
-
-    <!-- CTA BAND -->
-    <div class="footer-cta-band" id="footer-cta">
-      <div class="container">
-        <div class="footer-cta-inner">
-          <div class="footer-cta-text">
-            <p class="footer-cta-eyebrow">Ready to begin?</p>
-            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+      <footer class="site-footer-premium-light">
+    <!-- CTA TOP SECTION -->
+    <div class="footer-light-cta">
+      <div class="footer-cta-container">
+        <div class="cta-text-content reveal reveal-left">
+          <p style="font-size: 0.75rem; letter-spacing: 0.2em; color: #D4A82E; text-transform: uppercase; margin-bottom: 1rem;">Varam Ecosystem</p>
+          <h2>Let's build something<br>extraordinary.</h2>
+          <p>Discover integrated architecture, construction, and property management solutions from Varam with bespoke designs, premium execution, and dependable delivery across South India.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-gold-solid">Start Your Project</a>
+            <a href="portfolio.html" class="btn-gold-outline">Explore Portfolio</a>
           </div>
-          <div class="footer-cta-actions">
-            <a href="mailto:hello@varam.co" class="btn-footer-primary">Email Us Directly <i data-lucide="arrow-right"
-                class="icon-xs"></i></a>
+        </div>
+        
+        <div class="cta-stats-grid" data-stagger-container=".cta-stat-box" data-stagger-delay="100">
+          <div class="cta-stat-box reveal reveal-right">
+            <h3><span class="stat-number" data-target="28">0</span>+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="cta-stat-box reveal reveal-right">
+            <h3><span class="stat-number" data-target="100">0</span>+</h3>
+            <p>Projects</p>
+          </div>
+          <div class="cta-stat-box reveal reveal-right">
+            <h3>Pan-India</h3>
+            <p>Presence</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MAIN BODY -->
-    <div class="footer-body">
-      <div class="container">
-        <div class="footer-main-row">
-
-          <div class="footer-brand-col">
-            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
-            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated
-              lifecycle.</p>
+    <!-- MAIN FOOTER AREA -->
+    <div class="footer-light-main">
+      <div class="footer-main-container">
+        <!-- Column 1: Brand -->
+        <div class="footer-light-col">
+          <img src="assets/logos/varam-logo-dark.png" alt="VARAM" class="footer-brand-logo-dark">
+          <p class="brand-desc">
+            Integrated architecture, construction, and property management solutions, blending modern design traditions with a refined, contemporary finish.
+          </p>
+          <div class="social-squares">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/varamecosystem" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://youtube.com/@varamecosystem" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M2.5 7.1C2.5 7.1 2.3 5.4 3 4.6c.9-1 1.9-1 2.4-1.1C8.8 3 12 3 12 3s3.2 0 6.6.5c.5.1 1.5.1 2.4 1.1.7.8.5 2.5.5 2.5s.2 2.1.2 4.1v1.5c0 2-.2 4.1-.2 4.1s.2 1.7-.5 2.5c-.9 1-2.1 1-2.6 1.1-1.9.2-6.2.2-6.2.2s-3.2 0-6.6-.5c-.5-.1-1.5-.1-2.4-1.1-.7-.8-.5-2.5-.5-2.5s-.2-2.1-.2-4.1V11c0-2 .2-4.1.2-4.1z"/><path d="M9.5 15.5V8.5L15.5 12z"/></svg>
+            </a>
           </div>
+        </div>
 
-          <div class="footer-links-wrap">
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Sections</p>
-              <a href="#about-varam" class="footer-link">About VARAM</a>
-              <a href="#companies" class="footer-link">Services</a>
-              <a href="#featured-projects" class="footer-link">Portfolio</a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Connect</p>
-              <a href="https://instagram.com/varam.ecosystem" class="footer-link" target="_blank">Instagram</a>
-              <a href="https://linkedin.com/company/varam-ecosystem" class="footer-link" target="_blank">LinkedIn</a>
-              <a href="#footer-cta" class="footer-link">Contact</a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Reach Us</p>
-              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
-              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
-              <span class="footer-link">Chennai, Tamil Nadu</span>
-            </div>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Quick Links</h4>
+          <ul class="footer-light-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="varam-architects.html">Varam Architects</a></li>
+            <li><a href="shri-associates.html">Shri Associates</a></li>
+            <li><a href="mpms.html">MPMS</a></li>
+          </ul>
+        </div>
+        
+
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Our Services</h4>
+          <ul class="footer-light-links">
+            <li><a href="varam-architects.html">Architecture & Interiors</a></li>
+            <li><a href="shri-associates.html">Construction & Execution</a></li>
+            <li><a href="mpms.html">Property Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Connect -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Connect</h4>
+          <div class="connect-blocks">
+            
+            <a href="tel:+914442101234" class="connect-block">
+              <div class="connect-icon"><i data-lucide="phone" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Call Us</h5>
+                <p>+91 44 4210 1234</p>
+              </div>
+            </a>
+            
+            <a href="mailto:hello@varam.co" class="connect-block">
+              <div class="connect-icon"><i data-lucide="mail" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Email</h5>
+                <p>hello@varam.co</p>
+              </div>
+            </a>
+
+            <a href="contact.html" class="connect-block">
+              <div class="connect-icon"><i data-lucide="map-pin" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Visit Office</h5>
+                <p>Chennai, Tamil Nadu</p>
+              </div>
+            </a>
+
           </div>
-
         </div>
       </div>
     </div>
-
+    
     <!-- BOTTOM BAR -->
-    <div class="footer-bar">
-      <div class="container">
-        <div class="footer-bar-inner">
-          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
-          <div class="footer-socials-bar">
-            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
-            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
-            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer"
-              aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
-          </div>
-          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn"
-            aria-label="Back to top">
-            <i data-lucide="arrow-up" class="icon-xs"></i>
-          </button>
+    <div class="footer-light-bottom">
+      <div class="footer-bottom-container">
+        <div class="footer-copyright">&copy; 2026 Varam Ecosystem Pvt Ltd. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
         </div>
       </div>
     </div>
+    
 
   </footer>
 
 
-  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-    aria-label="Chat with VARAM on WhatsApp">
+  <div class="fab-container">
+  <button id="backToTop" class="fab-btn btn-top" aria-label="Back to top">
+    <i data-lucide="chevron-up" class="icon-md"></i>
+  </button>
+  <a href="tel:+914442101234" class="fab-btn btn-call" aria-label="Call VARAM">
+    <i data-lucide="phone" class="icon-md"></i>
+  </a>
+  <a href="https://wa.me/919840012345" class="fab-btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with VARAM on WhatsApp">
     <i data-lucide="message-circle" class="icon-md"></i>
   </a>
+</div>
+
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close modal">
+        <i data-lucide="x" class="icon-sm"></i>
+      </button>
+      <div class="modal-content">
+        <h2>Get in Touch</h2>
+        <p>Fill out the form below and our team will get back to you shortly.</p>
+        <form id="popup-contact-form" class="popup-form">
+          <div class="form-group">
+            <label for="pop-name">Name</label>
+            <input type="text" id="pop-name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="pop-email">Email</label>
+            <input type="email" id="pop-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="pop-phone">Phone</label>
+            <input type="tel" id="pop-phone" placeholder="Your Phone Number">
+          </div>
+          <div class="form-group">
+            <label for="pop-service">Interested In</label>
+            <select id="pop-service">
+              <option value="">Select a service...</option>
+              <option value="Architecture">Architecture & Interiors</option>
+              <option value="Construction">Construction</option>
+              <option value="Property Management">Property Management</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pop-message">Message</label>
+            <textarea id="pop-message" rows="3" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" style="width:100%; justify-content:center;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/home-projects.js"></script>
+  <script src="js/home-testimonials.js"></script>
   <script>
     // FAQ Accordion
     document.addEventListener('DOMContentLoaded', function () {
@@ -821,6 +1125,39 @@
           }
         });
       });
+    });
+
+    // Stats Count Up Animation
+    document.addEventListener('DOMContentLoaded', function () {
+      const stats = document.querySelectorAll('.stat-number');
+      
+      const countUp = (element) => {
+        const target = +element.getAttribute('data-target');
+        const duration = 1800; // 1.8 seconds duration
+        const stepTime = Math.max(Math.floor(duration / target), 15);
+        let start = 0;
+        
+        const timer = setInterval(() => {
+          start += Math.ceil(target / (duration / stepTime));
+          if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+          } else {
+            element.textContent = start;
+          }
+        }, stepTime);
+      };
+
+      const statsObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            countUp(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      stats.forEach(stat => statsObserver.observe(stat));
     });
   </script>
 

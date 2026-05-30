@@ -77,6 +77,12 @@
         }
       });
     });
+
+    drawer.querySelectorAll('.drawer-dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        closeDrawer();
+      });
+    });
   }
 
   // ---- Hero Slideshow ----
@@ -153,4 +159,111 @@
     }
   })
 
+  // ---- Back to Top Button ----
+  var backToTopBtn = document.getElementById('backToTop')
+  if (backToTopBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('is-visible')
+      } else {
+        backToTopBtn.classList.remove('is-visible')
+      }
+    }, { passive: true })
+
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+  }
+
+
+  // ---- MODAL / POPUP FORM ----
+  var contactModal = document.getElementById('contact-modal')
+  if (contactModal) {
+    var modalCloseBtn = contactModal.querySelector('.modal-close')
+    
+    function openModal(e) {
+      if (e) e.preventDefault()
+      contactModal.classList.add('is-open')
+      document.body.style.overflow = 'hidden'
+    }
+    
+    function closeModal() {
+      contactModal.classList.remove('is-open')
+      document.body.style.overflow = ''
+    }
+
+    if (modalCloseBtn) {
+      modalCloseBtn.addEventListener('click', closeModal)
+    }
+
+    // Close on click outside
+    contactModal.addEventListener('click', function(e) {
+      if (e.target === contactModal) {
+        closeModal()
+      }
+    })
+
+    // Attach to all "Get in Touch" buttons and "#footer-cta" links
+    document.querySelectorAll('a, button').forEach(function(el) {
+      var text = el.textContent.trim().toLowerCase()
+      var href = el.getAttribute('href') || ''
+      if (text === 'get in touch' || text === 'start your project' || text === 'start a conversation' || href === '#footer-cta') {
+        el.addEventListener('click', openModal)
+      }
+    })
+  }
+
+  // ---- Scroll Reveal Animations (Intersection Observer) ----
+  function initScrollReveal() {
+    if (!('IntersectionObserver' in window)) {
+      // Fallback: immediately reveal all elements if IntersectionObserver is not supported
+      var allReveals = document.querySelectorAll('.reveal');
+      for (var i = 0; i < allReveals.length; i++) {
+        allReveals[i].classList.add('revealed');
+      }
+      return;
+    }
+
+    var revealCallback = function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    var observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -8% 0px', // trigger slightly before entering fully to look natural
+      threshold: 0.08 // 8% visibility
+    };
+
+    var observer = new IntersectionObserver(revealCallback, observerOptions);
+
+    // Observe all reveal targets
+    var revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(function (el) {
+      observer.observe(el);
+    });
+
+    // Auto-stagger logic for lists/grids (e.g., cards, feature blocks)
+    document.querySelectorAll('[data-stagger-container]').forEach(function (container) {
+      var selector = container.getAttribute('data-stagger-container') || '.reveal';
+      var delay = parseInt(container.getAttribute('data-stagger-delay') || '100', 10);
+      var children = container.querySelectorAll(selector);
+      children.forEach(function (child, idx) {
+        if (!child.style.transitionDelay) {
+          child.style.transitionDelay = (idx * delay) + 'ms';
+        }
+      });
+    });
+  }
+
+  // Initialize as soon as DOM content is parsed
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
+  } else {
+    initScrollReveal();
+  }
 })()

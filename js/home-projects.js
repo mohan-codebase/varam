@@ -1,5 +1,5 @@
 /* ============================================================
-   portfolio.js — Portfolio grid filter and project lightbox
+   home-projects.js — Home page portfolio grid filter and project lightbox
    ============================================================ */
 
 ;(function () {
@@ -58,8 +58,8 @@
   }
 
   // ---- Filter ----
-  var filterBtns = document.querySelectorAll('.filter-btn')
-  var items = document.querySelectorAll('.portfolio-item')
+  var filterBtns = document.querySelectorAll('.home-filter-btn')
+  var items = document.querySelectorAll('.home-project-card')
 
   filterBtns.forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -71,8 +71,10 @@
       items.forEach(function (item) {
         if (filter === 'all' || item.dataset.category === filter) {
           item.style.display = ''
+          item.classList.add('fade-in')
         } else {
           item.style.display = 'none'
+          item.classList.remove('fade-in')
         }
       })
     })
@@ -113,8 +115,10 @@
     previousFocus && previousFocus.focus()
   }
 
-  document.querySelectorAll('.view-project').forEach(function (btn) {
-    btn.addEventListener('click', function () { openLightbox(this.dataset.project) })
+  document.querySelectorAll('.home-project-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      openLightbox(this.dataset.project)
+    })
   })
 
   if (lbClose) lbClose.addEventListener('click', closeLightbox)

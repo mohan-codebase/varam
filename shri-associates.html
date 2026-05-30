@@ -52,7 +52,7 @@
   <nav id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="VARAM — Home">
-        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM">
+        <img src="assets/logos/varam-logo-yellow.png" alt="VARAM">
       </a>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
@@ -80,7 +80,7 @@
         <a href="contact.html" class="nav-link">Contact / Enquiry</a>
       </div>
       <div class="nav-actions">
-        <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+        <a href="#footer-cta" class="btn btn-primary nav-cta">Get in Touch</a>
         <button id="nav-hamburger" class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
           aria-controls="mobile-drawer">
           <span></span><span></span><span></span>
@@ -93,9 +93,9 @@
     <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
     <div class="drawer-panel">
       <div class="drawer-header">
-        <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" style="height:2.75rem; width:auto; object-fit:contain;">
+        <img src="assets/logos/varam-logo-yellow.png" alt="VARAM" class="drawer-logo">
         <button id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
-          <i data-lucide="x" style="width:20px;height:20px;"></i>
+          <i data-lucide="x" class="icon-sm"></i>
         </button>
       </div>
       <nav class="drawer-nav" aria-label="Mobile navigation">
@@ -120,15 +120,15 @@
         <a href="contact.html" class="drawer-link">Contact / Enquiry</a>
       </nav>
       <div class="drawer-cta">
-        <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start Your Project</a>
+        <a href="#footer-cta" class="btn btn-primary btn-full drawer-close-link">Start Your Project</a>
       </div>
       <div class="drawer-social">
-        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Instagram"><i
-            data-lucide="instagram" style="width:18px;height:18px;"></i></a>
-        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on Facebook"><i
-            data-lucide="facebook" style="width:18px;height:18px;"></i></a>
-        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="VARAM on LinkedIn"><i
-            data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+        <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer"
+          aria-label="VARAM on Instagram"><i data-lucide="instagram" class="icon-sm"></i></a>
+        <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer"
+          aria-label="VARAM on Facebook"><i data-lucide="facebook" class="icon-sm"></i></a>
+        <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer"
+          aria-label="VARAM on LinkedIn"><i data-lucide="linkedin" class="icon-sm"></i></a>
       </div>
     </div>
   </div>
@@ -140,11 +140,11 @@
       <div class="hero-full-bg" aria-hidden="true"></div>
       <div class="hero-full-overlay" aria-hidden="true"></div>
       <div class="hero-full-content container">
-        <p class="eyebrow-yellow">Shri Associates</p>
-        <h1>Precision construction.<br>Delivered on time.</h1>
-        <p>From structural concrete to precision joinery — Shri Associates executes every scope with the discipline of a
+        <p class="eyebrow-yellow reveal reveal-up">Shri Associates</p>
+        <h1 class="reveal reveal-up reveal-delay-150">Precision construction.<br>Delivered on time.</h1>
+        <p class="reveal reveal-up reveal-delay-300">From structural concrete to precision joinery — Shri Associates executes every scope with the discipline of a
           specialist and the understanding of an integrated partner who reads the drawings the way they were drawn.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+        <div class="reveal reveal-up reveal-delay-450" style="display:flex;flex-wrap:wrap;gap:1rem;">
           <a href="contact.html" class="btn btn-primary">Request a Quote</a>
           <a href="portfolio.html" class="btn btn-outline-white">Construction Projects</a>
         </div>
@@ -155,8 +155,8 @@
     <section class="exec-section">
       <div class="container">
         <div class="exec-inner">
-          <div class="exec-text">
-            <p class="eyebrow">Execution Philosophy</p>
+          <div class="exec-text reveal reveal-blur">
+             <p class="eyebrow">Execution Philosophy</p>
             <h2>We build the way the drawings intend — not the way that is convenient.</h2>
             <div class="divider"></div>
             <p>Shri Associates was built on a frustration that most owners share: contractors who submit impressive
@@ -168,27 +168,28 @@
               typical contractual chain are solved in hours.</p>
             <p>For projects designed by external architects, we bring the same discipline: precision to specification,
               active communication with the design team, and zero tolerance for unexplained deviations.</p>
-            <div class="quality-pillars">
-              <div class="pillar">
+            <div class="quality-pillars" data-stagger-container=".pillar" data-stagger-delay="80">
+              <div class="pillar reveal reveal-up">
                 <p class="pillar-num">01</p>
                 <p>No surprises on costs</p>
               </div>
-              <div class="pillar">
+              <div class="pillar reveal reveal-up">
                 <p class="pillar-num">02</p>
                 <p>Weekly progress reports</p>
               </div>
-              <div class="pillar">
+              <div class="pillar reveal reveal-up">
                 <p class="pillar-num">03</p>
                 <p>Documented quality checks</p>
               </div>
-              <div class="pillar">
+              <div class="pillar reveal reveal-up">
                 <p class="pillar-num">04</p>
                 <p>Single point of contact</p>
               </div>
             </div>
           </div>
-          <img src="assets/images/construction/site-work.jpg" alt="Shri Associates site team reviewing structural work"
-            class="exec-img" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+          <img src="https://images.unsplash.com/photo-1577199001468-44c049e7603f?w=900&q=85&auto=format&fit=crop"
+            alt="Shri Associates site team reviewing structural work"
+            class="exec-img reveal reveal-right" loading="lazy">
         </div>
       </div>
     </section>
@@ -196,14 +197,14 @@
     <!-- SERVICES -->
     <section class="shri-services section" id="services">
       <div class="container">
-        <div class="section-header centered">
+        <div class="section-header centered reveal reveal-up">
           <p class="eyebrow">What We Build</p>
           <h2>Construction services.</h2>
           <p>From ground-breaking to final coat — across new builds, interiors, and renovation.</p>
         </div>
-        <div class="grid-2" style="gap:1.5px;">
+        <div class="grid-2" data-stagger-container=".shri-service-item" data-stagger-delay="100">
 
-          <article class="shri-service-item">
+          <article class="shri-service-item reveal reveal-up">
             <div class="shri-service-icon">
               <i data-lucide="building" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -214,7 +215,7 @@
             </div>
           </article>
 
-          <article class="shri-service-item">
+          <article class="shri-service-item reveal reveal-up">
             <div class="shri-service-icon">
               <i data-lucide="layout" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -225,7 +226,7 @@
             </div>
           </article>
 
-          <article class="shri-service-item">
+          <article class="shri-service-item reveal reveal-up">
             <div class="shri-service-icon">
               <i data-lucide="tool" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -236,7 +237,7 @@
             </div>
           </article>
 
-          <article class="shri-service-item">
+          <article class="shri-service-item reveal reveal-up">
             <div class="shri-service-icon">
               <i data-lucide="file-spreadsheet" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -247,7 +248,7 @@
             </div>
           </article>
 
-          <article class="shri-service-item">
+          <article class="shri-service-item reveal reveal-up">
             <div class="shri-service-icon">
               <i data-lucide="clipboard-list" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -258,7 +259,7 @@
             </div>
           </article>
 
-          <article class="shri-service-item">
+          <article class="shri-service-item reveal reveal-up">
             <div class="shri-service-icon">
               <i data-lucide="zap" style="width:26px;height:26px;stroke-width:1;"></i>
             </div>
@@ -276,18 +277,18 @@
     <!-- FEATURED PROJECTS -->
     <section class="shri-projects section" id="projects">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal reveal-up">
           <p class="eyebrow">Selected Work</p>
           <h2>Construction projects.</h2>
           <p style="color:var(--text-muted);">A selection of residential, commercial, and renovation projects delivered
             by Shri Associates.</p>
         </div>
-        <div class="grid-2">
+        <div class="grid-2" data-stagger-container=".shri-project-card" data-stagger-delay="150">
 
-          <article class="shri-project-card">
-            <img src="assets/images/portfolio/project-03.jpg"
+          <article class="shri-project-card reveal reveal-up">
+            <img src="https://images.unsplash.com/photo-1607567618395-62fc2d132c3e?w=900&q=85&auto=format&fit=crop"
               alt="Greenfield Villas, East Coast Road — six luxury villas turnkey construction" class="shri-project-img"
-              loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+              loading="lazy">
             <div class="shri-project-body">
               <span class="tag">Residential Construction</span>
               <h3>Greenfield Villas, East Coast Road</h3>
@@ -303,9 +304,10 @@
             </div>
           </article>
 
-          <article class="shri-project-card">
-            <img src="assets/images/portfolio/project-04.jpg" alt="Heritage Townhouse Restoration, Mylapore"
-              class="shri-project-img" loading="lazy" onerror="this.src='assets/images/placeholder.svg'">
+          <article class="shri-project-card reveal reveal-up">
+            <img src="https://images.unsplash.com/photo-1668749543729-9fbd709751ca?w=900&q=85&auto=format&fit=crop"
+              alt="Heritage Townhouse Restoration, Mylapore"
+              class="shri-project-img" loading="lazy">
             <div class="shri-project-body">
               <span class="tag">Heritage Renovation</span>
               <h3>Heritage Townhouse Restoration, Mylapore</h3>
@@ -330,7 +332,7 @@
     <!-- CTA -->
     <section class="cta-band section" aria-labelledby="shri-cta">
       <div class="container">
-        <div class="cta-band-inner">
+        <div class="cta-band-inner reveal reveal-up">
           <div>
             <h2 id="shri-cta">Ready to build?</h2>
             <p>Share your drawings and scope — we will provide a detailed, itemised estimate.</p>
@@ -342,81 +344,191 @@
 
   </main>
 
-  <footer class="site-footer-v2">
-
-    <!-- CTA BAND -->
-    <div class="footer-cta-band">
-      <div class="container">
-        <div class="footer-cta-inner">
-          <div class="footer-cta-text">
-            <p class="footer-cta-eyebrow">Ready to begin?</p>
-            <h2 class="footer-cta-heading">Let's build something extraordinary.</h2>
+      <footer class="site-footer-premium-light">
+    <!-- CTA TOP SECTION -->
+    <div class="footer-light-cta">
+      <div class="footer-cta-container">
+        <div class="cta-text-content">
+          <p style="font-size: 0.75rem; letter-spacing: 0.2em; color: #D4A82E; text-transform: uppercase; margin-bottom: 1rem;">Varam Ecosystem</p>
+          <h2>Let's build something<br>extraordinary.</h2>
+          <p>Discover integrated architecture, construction, and property management solutions from Varam with bespoke designs, premium execution, and dependable delivery across South India.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-gold-solid">Start Your Project</a>
+            <a href="portfolio.html" class="btn-gold-outline">Explore Portfolio</a>
           </div>
-          <div class="footer-cta-actions">
-            <a href="contact.html" class="btn-footer-primary">Start Your Project <i data-lucide="arrow-right" class="icon-xs"></i></a>
+        </div>
+        
+        <div class="cta-stats-grid">
+          <div class="cta-stat-box">
+            <h3>28+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="cta-stat-box">
+            <h3>100+</h3>
+            <p>Projects</p>
+          </div>
+          <div class="cta-stat-box">
+            <h3>Pan-India</h3>
+            <p>Presence</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MAIN BODY -->
-    <div class="footer-body">
-      <div class="container">
-        <div class="footer-main-row">
-
-          <div class="footer-brand-col">
-            <img src="assets/logos/VARAM_logo_transparent_dark.png" alt="VARAM" class="footer-brand-logo">
-            <p class="footer-brand-desc">Architecture, Construction &amp; Property Management — one integrated lifecycle.</p>
+    <!-- MAIN FOOTER AREA -->
+    <div class="footer-light-main">
+      <div class="footer-main-container">
+        <!-- Column 1: Brand -->
+        <div class="footer-light-col">
+          <img src="assets/logos/varam-logo-dark.png" alt="VARAM" class="footer-brand-logo-dark">
+          <p class="brand-desc">
+            Integrated architecture, construction, and property management solutions, blending modern design traditions with a refined, contemporary finish.
+          </p>
+          <div class="social-squares">
+            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/varamecosystem" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://youtube.com/@varamecosystem" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm"><path d="M2.5 7.1C2.5 7.1 2.3 5.4 3 4.6c.9-1 1.9-1 2.4-1.1C8.8 3 12 3 12 3s3.2 0 6.6.5c.5.1 1.5.1 2.4 1.1.7.8.5 2.5.5 2.5s.2 2.1.2 4.1v1.5c0 2-.2 4.1-.2 4.1s.2 1.7-.5 2.5c-.9 1-2.1 1-2.6 1.1-1.9.2-6.2.2-6.2.2s-3.2 0-6.6-.5c-.5-.1-1.5-.1-2.4-1.1-.7-.8-.5-2.5-.5-2.5s-.2-2.1-.2-4.1V11c0-2 .2-4.1.2-4.1z"/><path d="M9.5 15.5V8.5L15.5 12z"/></svg>
+            </a>
           </div>
+        </div>
 
-          <div class="footer-links-wrap">
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Services</p>
-              <a href="varam-architects.html" class="footer-link">Varam Architects</a>
-              <a href="shri-associates.html" class="footer-link">Shri Associates</a>
-              <a href="mpms.html" class="footer-link">MPMS</a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Company</p>
-              <a href="about.html" class="footer-link">About VARAM</a>
-              <a href="portfolio.html" class="footer-link">Portfolio</a>
-              <a href="contact.html" class="footer-link">Contact</a>
-            </div>
-            <div class="footer-link-group">
-              <p class="footer-link-heading">Reach Us</p>
-              <a href="tel:+914442101234" class="footer-link">+91 44 4210 1234</a>
-              <a href="mailto:hello@varam.co" class="footer-link">hello@varam.co</a>
-              <span class="footer-link">Chennai, Tamil Nadu</span>
-            </div>
+        <!-- Column 2: Quick Links -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Quick Links</h4>
+          <ul class="footer-light-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="varam-architects.html">Varam Architects</a></li>
+            <li><a href="shri-associates.html">Shri Associates</a></li>
+            <li><a href="mpms.html">MPMS</a></li>
+          </ul>
+        </div>
+        
+
+
+        <!-- Column 3: Our Services -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Our Services</h4>
+          <ul class="footer-light-links">
+            <li><a href="varam-architects.html">Architecture & Interiors</a></li>
+            <li><a href="shri-associates.html">Construction & Execution</a></li>
+            <li><a href="mpms.html">Property Management</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Connect -->
+        <div class="footer-light-col">
+          <h4 class="footer-light-heading">Connect</h4>
+          <div class="connect-blocks">
+            
+            <a href="tel:+914442101234" class="connect-block">
+              <div class="connect-icon"><i data-lucide="phone" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Call Us</h5>
+                <p>+91 44 4210 1234</p>
+              </div>
+            </a>
+            
+            <a href="mailto:hello@varam.co" class="connect-block">
+              <div class="connect-icon"><i data-lucide="mail" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Email</h5>
+                <p>hello@varam.co</p>
+              </div>
+            </a>
+
+            <a href="contact.html" class="connect-block">
+              <div class="connect-icon"><i data-lucide="map-pin" class="icon-sm"></i></div>
+              <div class="connect-details">
+                <h5>Visit Office</h5>
+                <p>Chennai, Tamil Nadu</p>
+              </div>
+            </a>
+
           </div>
-
         </div>
       </div>
     </div>
-
+    
     <!-- BOTTOM BAR -->
-    <div class="footer-bar">
-      <div class="container">
-        <div class="footer-bar-inner">
-          <p class="footer-copyright">&copy; 2026 VARAM. All rights reserved.</p>
-          <div class="footer-socials-bar">
-            <a href="https://instagram.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-icon"><i data-lucide="instagram" class="icon-xs"></i></a>
-            <a href="https://facebook.com/varam.ecosystem" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-icon"><i data-lucide="facebook" class="icon-xs"></i></a>
-            <a href="https://linkedin.com/company/varam-ecosystem" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-icon"><i data-lucide="linkedin" class="icon-xs"></i></a>
-          </div>
-          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="footer-top-btn" aria-label="Back to top">
-            <i data-lucide="arrow-up" class="icon-xs"></i>
-          </button>
+    <div class="footer-light-bottom">
+      <div class="footer-bottom-container">
+        <div class="footer-copyright">&copy; 2026 Varam Ecosystem Pvt Ltd. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
         </div>
       </div>
     </div>
+    
 
   </footer>
 
-  <a href="https://wa.me/919840012345" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
-    aria-label="Chat with VARAM on WhatsApp">
-    <i data-lucide="message-circle" style="width:22px;height:22px;"></i>
+  <div class="fab-container">
+  <button id="backToTop" class="fab-btn btn-top" aria-label="Back to top">
+    <i data-lucide="chevron-up" class="icon-md"></i>
+  </button>
+  <a href="tel:+914442101234" class="fab-btn btn-call" aria-label="Call VARAM">
+    <i data-lucide="phone" class="icon-md"></i>
   </a>
+  <a href="https://wa.me/919840012345" class="fab-btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with VARAM on WhatsApp">
+    <i data-lucide="message-circle" class="icon-md"></i>
+  </a>
+</div>
+
+  
+  <div id="contact-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close modal">
+        <i data-lucide="x" class="icon-sm"></i>
+      </button>
+      <div class="modal-content">
+        <h2>Get in Touch</h2>
+        <p>Fill out the form below and our team will get back to you shortly.</p>
+        <form id="popup-contact-form" class="popup-form">
+          <div class="form-group">
+            <label for="pop-name">Name</label>
+            <input type="text" id="pop-name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="pop-email">Email</label>
+            <input type="email" id="pop-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="pop-phone">Phone</label>
+            <input type="tel" id="pop-phone" placeholder="Your Phone Number">
+          </div>
+          <div class="form-group">
+            <label for="pop-service">Interested In</label>
+            <select id="pop-service">
+              <option value="">Select a service...</option>
+              <option value="Architecture">Architecture & Interiors</option>
+              <option value="Construction">Construction</option>
+              <option value="Property Management">Property Management</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pop-message">Message</label>
+            <textarea id="pop-message" rows="3" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" style="width:100%; justify-content:center;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="js/main.js"></script>
