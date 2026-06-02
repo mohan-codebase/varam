@@ -262,7 +262,7 @@
 
 /* ---- About VARAM Strip (v2) ---- */
 .about-home {
-  padding: 6rem 0;
+  padding: 2.5rem 0;
 }
 
 .about-home-inner {
@@ -347,6 +347,7 @@
 }
 
 @media (max-width: 900px) {
+  .about-home { padding: 1.5rem 0; }
   .about-home-inner { grid-template-columns: 1fr; gap: 3rem; }
   .about-home-img { aspect-ratio: 16/9; border-radius: 0.375rem; }
   .about-img-badge { right: 1rem; bottom: -1rem; }
